@@ -264,28 +264,28 @@ input[name="slideshow"] {
 }
 
 
-/* :::::: slideContents :::::: */
+/* slideContents */
 .slideContents {
 	display: flex;
 	position: relative;
 	width: 500%;
-	background: #66CCFF;
+	!background: #66CCFF;
 	text-align: center;
 	-webkit-user-select: none;
 	user-select: none;
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: transform .5s cubic-bezier(0, 0, 0.58, 1);
 }
 .slideContents section {
 	width: 20%;
 }
 .slideContents section img {
 	max-width: 100%;
-	padding: 0 50px;
+	padding: 0 0px;
 	box-sizing: border-box;
 	vertical-align: middle;
 }
 
-/* :::::: arrows :::::: */
+/* arrows */
 .arrow,
 .arrow label,
 .arrow .ico {
@@ -302,15 +302,14 @@ input[name="slideshow"] {
 .next {
 	right: 0;
 }
-
-
 .arrow:hover {
-	background: rgba(255,255,255,.2);
+	background: rgba(255,255,255,.20);
 }
 .arrow,
 .arrow label {
 	cursor: pointer;
-	width: 50px;
+	/* cursor on width */
+	width: 250px;
 	height: 100%;
 }
 .arrow label {
@@ -320,22 +319,22 @@ input[name="slideshow"] {
 }
 .arrow .ico {
 	top: calc(50% - 6px);
-	width: 12px;
-	height: 12px;
-	border-top: 3px solid #fff;
+	width: 25px;
+	height: 25px;
+	border-top: 5px solid #808080;
 	opacity: 0;
 }
 .prev .ico {
 	left: 50%;
-	border-left: 3px solid #fff;
+	border-left: 5px solid #808080;
 	transform: rotate(-45deg);
-	transition: left .3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s;
+	transition: left .5s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .5s;
 }
 .next .ico {
 	right: 50%;
-	border-right: 3px solid #fff;
+	border-right: 5px solid #808080;
 	transform: rotate(45deg);
-	transition: right .3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s;
+	transition: right .5s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .5s;
 }
 .arrow:hover .ico {
 	opacity: .6;
@@ -347,13 +346,32 @@ input[name="slideshow"] {
 	right: calc(50% - 6px);
 }
 
-/* :::::: arrow mechanism :::::: */
+/* mechanism */
+#switch1:checked ~ .slideContents {
+	transform: translateX(0);
+}
+#switch2:checked ~ .slideContents {
+	transform: translateX(-20%);
+}
+#switch3:checked ~ .slideContents {
+	transform: translateX(-40%);
+}
+#switch4:checked ~ .slideContents {
+	transform: translateX(-60%);
+}
+#switch5:checked ~ .slideContents {
+	transform: translateX(-80%);
+}
+
+/* arrow mechanism */
 .arrow label {
 	pointer-events: none;
 }
-#switch1:checked ~ .prev label[for="switch2"],
+#switch1:checked ~ .prev label[for="switch3"],
 #switch2:checked ~ .prev label[for="switch1"],
+#switch3:checked ~ .prev label[for="switch2"],
 #switch1:checked ~ .next label[for="switch2"],
-#switch2:checked ~ .next label[for="switch1"], {
+#switch2:checked ~ .next label[for="switch3"],
+#switch3:checked ~ .next label[for="switch1"] {
 	pointer-events: auto;
 }
