@@ -254,7 +254,6 @@ footer p {
 	font-size: 0.75rem;
 	line-height: 93px;
 }
-
 .slideshow {
 	position: relative;
 	overflow: hidden;
@@ -262,12 +261,12 @@ footer p {
 input[name="slideshow"] {
 	display: none;
 }
-
-
 /* slideContents */
 .slideContents {
 	display: flex;
+	overflow: hidden;
 	position: relative;
+	background: #000;
 	width: 500%;
 	height: 740px;
 	text-align: center;
@@ -283,14 +282,15 @@ input[name="slideshow"] {
 	left: 0;
 	!transform: translateX(100%);
 	transition: transform .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+	/* auto move*/
+	animation: autoplay 40s infinite;
 }
 .slideContents section img {
 	max-width: 100%;
-	padding: 0 0px;
+	!padding: 0 0px;
 	box-sizing: border-box;
 	vertical-align: middle;
 }
-
 /* arrows */
 .arrow,
 .arrow label,
@@ -351,7 +351,6 @@ input[name="slideshow"] {
 .next:hover .ico {
 	right: calc(50% - 6px);
 }
-
 /* mechanism */
 #switch1:checked ~ .slideContents {
 	transform: translateX(0);
@@ -362,7 +361,6 @@ input[name="slideshow"] {
 #switch3:checked ~ .slideContents {
 	transform: translateX(-40%);
 }
-
 /* arrow mechanism */
 .arrow label {
 	pointer-events: none;
@@ -375,14 +373,20 @@ input[name="slideshow"] {
 #switch3:checked ~ .next label[for="switch1"] {
 	pointer-events: auto;
 }
-
+/* auto move */
+@keyframes autoplay {
+	0%, 100% { transform: none; }
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-200%); }
+	!20.001%, 96% { transform: translateX(0%); }
+}
 /* scroll under */
 p a {
 	color: #fff;
 }
 .underScroll {
 	position: absolute;
-	top: 665px;
+	top: 650px;
 	left: 46.4%;
 	z-index: 2;
 	font-family: "Century Gothic";
@@ -391,7 +395,7 @@ p a {
 	-webkit-transform: translate(0, -10%);
 	transform: translate(0, -10%);
 }
-/* aroow under */
+/* arrow under */
 .underScroll span {
   position: absolute;
   top: -90px;
@@ -406,7 +410,10 @@ p a {
   animation: sdb 1.5s infinite;
   box-sizing: border-box;
 }
-
+.underScroll:hover {
+	opacity: 0.2;
+}
+/* arrow under move */
 @-webkit-keyframes sdb {
   0% {
     -webkit-transform: rotate(-45deg) translate(0, 0);
