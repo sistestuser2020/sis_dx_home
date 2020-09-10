@@ -387,19 +387,22 @@ p a {
 .underScroll {
 	position: absolute;
 	top: 650px;
-	left: 46.4%;
+	left: 50%;
+	text-align: center;
 	z-index: 2;
+	display:inline-block;
+	margin-left: -60px;
 	font-family: "Century Gothic";
 	font-size: 1.9rem;
-	display: inline-block:
-	-webkit-transform: translate(0, -10%);
-	transform: translate(0, -10%);
+	letter-spacing: 0.3em;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
 }
 /* arrow under */
 .underScroll span {
   position: absolute;
   top: -90px;
-  left: 30%;
+  left: 23%;
   width: 44px;
   height: 44px;
   border-left: 3px solid #fff;
