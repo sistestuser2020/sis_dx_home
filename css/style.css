@@ -1,4 +1,4 @@
-html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
+﻿html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -259,7 +259,8 @@ footer p {
 	overflow: hidden;
 }
 input[name="slideshow"] {
-	display: none;
+	width 50%;
+	display: inline;
 }
 /* slideContents */
 .slideContents {
