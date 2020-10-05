@@ -31,7 +31,7 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 $(function() {
-	underScroll.click(function(){
+	$('a[href^="#"]' + 'a:not(".carousel-control")').click(function(){
 	var speed = 750;
 	var href= $(this).attr("href");
 	var target = $(href == "#" || href == "" ? 'html' : href);
