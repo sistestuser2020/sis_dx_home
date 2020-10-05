@@ -254,133 +254,7 @@ footer p {
 	font-size: 0.75rem;
 	line-height: 93px;
 }
-.slideshow {
-	position: relative;
-	overflow: hidden;
-}
-input[name="slideshow"] {
-	width 50%;
-	display: inline;
-}
-/* slideContents */
-.slideContents {
-	display: flex;
-	overflow: hidden;
-	position: relative;
-	background: #000;
-	width: 500%;
-	height: 740px;
-	text-align: center;
-	-webkit-user-select: none;
-	user-select: none;
-	transition: transform .5s cubic-bezier(0, 0, 0.58, 1);
-}
-.slideContents section {
-	width: 20%;
-	height 740px;
-	potision: absolute;
-	top: 0;
-	left: 0;
-	!transform: translateX(100%);
-	transition: transform .5s cubic-bezier(0.215, 0.61, 0.355, 1);
-	/* auto move*/
-	animation: autoplay 40s infinite;
-}
-.slideContents section img {
-	max-width: 100%;
-	!padding: 0 0px;
-	box-sizing: border-box;
-	vertical-align: middle;
-}
-/* arrows */
-.arrow,
-.arrow label,
-.arrow .ico {
-	position: absolute;
-}
-.arrow {
-	top: 0;
-	margin: 0;
-	transition: background .3s;
-}
-.prev {
-	left: 0;
-}
-.next {
-	right: 0;
-}
-.arrow:hover {
-	background: rgba(255,255,255,0.3);
-}
-.arrow,
-.arrow label {
-	cursor: pointer;
-	/* cursor on width */
-	width: 250px;
-	height: 100%;
-}
-.arrow label {
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-.arrow .ico {
-	top: calc(50% - 6px);
-	width: 25px;
-	height: 25px;
-	border-top: 5px solid #fff;
-	opacity: 0;
-}
-.prev .ico {
-	left: 50%;
-	border-left: 5px solid #fff;
-	transform: rotate(-45deg);
-	transition: left .5s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .5s;
-}
-.next .ico {
-	right: 50%;
-	border-right: 5px solid #fff;
-	transform: rotate(45deg);
-	transition: right .5s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .5s;
-}
-.arrow:hover .ico {
-	opacity: .6;
-}
-.prev:hover .ico {
-	left: calc(50% - 6px);
-}
-.next:hover .ico {
-	right: calc(50% - 6px);
-}
-/* mechanism */
-#switch1:checked ~ .slideContents {
-	transform: translateX(0);
-}
-#switch2:checked ~ .slideContents {
-	transform: translateX(-20%);
-}
-#switch3:checked ~ .slideContents {
-	transform: translateX(-40%);
-}
-/* arrow mechanism */
-.arrow label {
-	pointer-events: none;
-}
-#switch1:checked ~ .prev label[for="switch3"],
-#switch2:checked ~ .prev label[for="switch1"],
-#switch3:checked ~ .prev label[for="switch2"],
-#switch1:checked ~ .next label[for="switch2"],
-#switch2:checked ~ .next label[for="switch3"],
-#switch3:checked ~ .next label[for="switch1"] {
-	pointer-events: auto;
-}
-/* auto move */
-@keyframes autoplay {
-	0%, 100% { transform: none; }
-	15% { transform: translateX(-100%); }
-	30% { transform: translateX(-200%); }
-	!20.001%, 96% { transform: translateX(0%); }
-}
+
 /* scroll under */
 p a {
 	color: #fff;
@@ -443,4 +317,24 @@ p a {
     transform: rotate(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+
+/* 全体のスタイル */
+.swiper-wrapper {
+	width: 100%;
+	height: 700px;
+}
+
+/* 全スライド共通スタイル */
+.swiper-slide {
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 250px;
+}
+/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+.swiper-slide {
+	background-color: #000000;
 }
