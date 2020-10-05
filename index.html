@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
 <title>SISDX</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 <script type="text/javascript" async="" src="javascript/script.js"></script>
 </head>
 <body>
@@ -19,37 +20,28 @@
 				</div>
 			</div>
 		</header>
-		<main>
-		<div class="slideshow">
-			<input type="radio" name="slideshow" id="switch1" checked>
-			<input type="radio" name="slideshow" id="switch2">
-			<input type="radio" name="slideshow" id="switch3">
-		<div class="slideContents">
-			<section id="slide1">
-				<a href="sp/sp1.html"><img src="images/top01.png" alt="SP1の画面へ"></a>
-			</section>
-			<section id="slide2">
-				<a href="sp/sp2.html"><img src="images/TOP_IMG02.jpg" alt="SP2の画面へ"></a>
-			</section>
-			<section id="slide3">
-				<a href="sp/sp3.html"><img src="images/TOP_IMG03.jpg" alt="SP3の画面へ"></a>
-			</section>
-		</div>
-		<p class="arrow prev">
-			<i class="ico"></i>
-				<label for="switch1"></label>
-				<label for="switch2"></label>
-				<label for="switch3"></label>
-		</p>
-		<p class="arrow next">
-			<i class="ico"></i>
-				<label for="switch1"></label>
-				<label for="switch2"></label>
-				<label for="switch3"></label>
-		</p>
-		<p class = "underScroll">
-			<a href="#section01"><span></span>SCROLL</a>
-		</p>
+		<main>		
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="sp/sp1.html">
+					<img src="images/top01.png" alt="SP1の画面へ"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="sp/sp2.html">
+					<img src="images/TOP_IMG02.jpg" alt="SP2の画面へ"></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="sp/sp3.html">
+					<img src="images/TOP_IMG03.jpg" alt="SP3の画面へ"></a>
+				</div>
+			</div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-pagination swiper-pagination-white"></div>
+				<p class = "underScroll">
+				<a href="#section01"><span></span>SCROLL</a>
+			</p>
 		</div>
 		<section id="section01">
 				<div class="scroll">
