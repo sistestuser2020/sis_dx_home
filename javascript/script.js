@@ -1,14 +1,12 @@
 var mySwiper = new Swiper('.swiper-container', {
 	// slideEffect
-	effect: 'fade',
-	// firstSlide
-	nitialSlide: 2,
-	// auto 
-	// autoHeight: true,
+	// effect: 'fade',
 	// slideLoop
 	loop: true,
 	// slideSpeed (ms)
 	speed: 700,
+    centeredSlides : true,
+　slidesPerView: 1.2,
 	// autoSlide
 	autoplay: {
 		// slideSpeed (ms)
