@@ -155,6 +155,10 @@ nav {
 	height: 400px;
 	overflow: hidden;
 }
+.contents_member {
+	height: 400px;
+	overflow: hidden;
+}
 .left {
 	float: left;
 	height: 400px;
@@ -181,7 +185,7 @@ nav {
 .member {
 	text-align: center;
 }
-.member p,h4{
+.contents_member p,h4{
 	margin: 40px 120px 0 21px;
 	color: #000000;
 }
