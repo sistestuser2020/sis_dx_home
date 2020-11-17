@@ -179,10 +179,9 @@ nav {
 	height: 400px;
 }
 .center2 {
-	text-align: center;
-	border: 2px 
-        solid #aaa;
+	border: 2px solid #aaa;
         width: 50px;  
+	text-align: center;
 }
 .text {
 	background-color: white;
