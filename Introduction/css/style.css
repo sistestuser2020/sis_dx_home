@@ -181,6 +181,10 @@ nav {
 .member {
 	text-align: center;
 }
+.member p,h4{
+	margin: 40px 120px 0 21px;
+	color: #000000;
+}
 .text {
 	background-color: white;
 }
