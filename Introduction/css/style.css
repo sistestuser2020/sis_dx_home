@@ -178,6 +178,12 @@ nav {
 	width: 50%;
 	height: 400px;
 }
+.center2 {
+	border: 1px 
+        solid #aaa;
+        width: 400px;
+        text-align: center;
+}
 .text {
 	background-color: white;
 }
