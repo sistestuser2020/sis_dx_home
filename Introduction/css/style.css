@@ -150,7 +150,6 @@ nav {
 	padding: 83px 0 100px;
 } #div03 {
 	margin-bottom: 100px;
-	text-align: center;
 }
 .contents {
 	height: 400px;
@@ -178,6 +177,9 @@ nav {
 	float: center;
 	width: 50%;
 	height: 400px;
+}
+.member {
+	text-align: center;
 }
 .text {
 	background-color: white;
