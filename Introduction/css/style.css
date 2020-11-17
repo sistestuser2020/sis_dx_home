@@ -178,8 +178,14 @@ nav {
 	width: 50%;
 	height: 400px;
 }
-.center2 {
-	text-align: center;
+.center2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  width: 100px;
+  text-align: center;
 }
 .text {
 	background-color: white;
