@@ -17,15 +17,18 @@ body {
 } #header_inner {
 	height: 85px;
 	position: relative;
+	background-color: rgba(0,0,0,.75);
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	margin: auto;
+	background-color: rgba(0,0,0,.75);
 } #header_logo {
 	width: 194px;
 	height: 40px;
 	left: 19px;
+	background-color: rgba(0,0,0,.75);
 } #header_contact {
 	width: 155px;
 	height: 51px;
@@ -40,7 +43,7 @@ body {
 } #header_contact_inner:hover {
 	transform: scale(1.1,1.1);
 } #header_contact_inner p {
-	color: #rgba(0,0,0,.75);
+	color: #fff;
 } #header_text {
 	width: 243px;
 	height: 29px;
