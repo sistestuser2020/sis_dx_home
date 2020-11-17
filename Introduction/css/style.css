@@ -168,9 +168,6 @@ nav {
 } #photo03 {
 	background-image: url(../images/step3.jpg);
 }
-.center {
-	text-align: center;
-}
 .right {
 	float: right;
 	width: 50%;
@@ -180,6 +177,9 @@ nav {
 	float: center;
 	width: 50%;
 	height: 400px;
+}
+.center2 {
+	text-align: center;
 }
 .text {
 	background-color: white;
