@@ -179,10 +179,10 @@ nav {
 	height: 400px;
 }
 .center2 {
-	border: 10px 
+	text-align: center;
+	border: 2px 
         solid #aaa;
-        width: 10px;
-        text-align: center;
+        width: 50px;  
 }
 .text {
 	background-color: white;
