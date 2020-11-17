@@ -22,7 +22,6 @@ body {
 	top: 0;
 	bottom: 0;
 	margin: auto;
-	background-color: rgba(0,0,0,.50);
 } #header_logo {
 	width: 194px;
 	height: 40px;
@@ -41,7 +40,7 @@ body {
 } #header_contact_inner:hover {
 	transform: scale(1.1,1.1);
 } #header_contact_inner p {
-	color: #fff;
+	color: #rgba(0,0,0,.75);
 } #header_text {
 	width: 243px;
 	height: 29px;
