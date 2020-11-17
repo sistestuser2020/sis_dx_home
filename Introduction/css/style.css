@@ -181,9 +181,11 @@ nav {
 .member {
 	text-align: center;
 }
-.contents_member p,h4{
-	margin: 40px 120px 0 21px;
-	color: #000000;
+.member span{
+	font-size: 20px;
+	margin: 0 auto 13px;
+	padding-bottom: 8px;
+	width: 100%;
 }
 .text {
 	background-color: white;
