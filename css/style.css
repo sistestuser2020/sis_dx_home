@@ -17,7 +17,7 @@ body {
 } #header_inner {
 	height: 85px;
 	position: relative;
-	background: linear-gradient(#404040, #333366);
+	background: linear-gradient(#404040, #4e454a);
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
 	top: 0;
