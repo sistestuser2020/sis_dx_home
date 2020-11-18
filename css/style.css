@@ -17,8 +17,7 @@ body {
 } #header_inner {
 	height: 85px;
 	position: relative;
-	background-color: rgba(0,0,0,.75);
-	 opacity: 0.5;
+	background: linear-gradient(#000000, #483d8b);
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
 	top: 0;
@@ -251,7 +250,7 @@ h4 {
 footer {
 	height: 93px;
 	background: linear-gradient(#778899, #2f4f4f);
-	opacity: 0.75;
+	opacity: 0.9;
 }
 footer p {
 	margin-left: 119px;
