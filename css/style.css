@@ -30,7 +30,9 @@ body {
 } #header_contact {
 	width: 155px;
 	height: 51px;
-	right: 0;} #header_contact_inner {
+	right: 0;
+	background-color: rgba(0,0,0,.75);
+} #header_contact_inner {
 	display: block;
 	width: 102px;
 	height: 24px;
