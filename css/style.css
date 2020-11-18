@@ -15,6 +15,7 @@ body {
 	width: 960px;
 	margin: 0 auto;
 } #header_inner {
+	width: 960px;
 	height: 85px;
 	position: relative;
 	background-color: rgba(0,0,0,.75);
