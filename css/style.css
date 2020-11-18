@@ -249,7 +249,7 @@ h4 {
 }
 footer {
 	height: 93px;
-	background-color: linear-gradient(#F89174, #FFC778);;
+	background:linear-gradient(#F89174, #FFC778);
 }
 footer p {
 	margin-left: 119px;
