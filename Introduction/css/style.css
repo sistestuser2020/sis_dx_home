@@ -360,5 +360,3 @@ p a {
 .swiper-slide {
 	background-color: #ffffff;
 }
-.keyv-item{margin-top:100px;max-width:300px}.keyv__swiper .swiper-slide:nth-child(2n+2) .keyv-item .keyv-title{max-height:350px}
-.keyv-item{margin:0 auto;max-width:325px;position:relative;text-align:center;width:100%}
