@@ -201,8 +201,8 @@ intro {
 	top: 20px;
 }
 p.intro2{
-	margin: 30px 120px 0 21px;
-	text-aline: center;
+	position: relative;
+	padding-left: 99px;
 	color: #0000ff;
 }
 .main_contact {
