@@ -4,13 +4,14 @@ var mySwiper = new Swiper('.swiper-container', {
 	// slideLoop
 	loop: true,
 	// slideSpeed (ms)
-	speed: 700,
+	speed: 5000,
     centeredSlides : true,
-　slidesPerView: 1.2,
+　slidesPerView: 4.5,
+    spaceBetween: 80,
 	// autoSlide
 	autoplay: {
 		// slideSpeed (ms)
-		delay: 5000,
+		delay: 0,
 		stopOnLastSlide: false,
 		disableOnInteraction: false,
 		reverseDirection: false
