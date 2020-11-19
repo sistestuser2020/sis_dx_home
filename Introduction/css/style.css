@@ -200,6 +200,11 @@ intro {
 	position: relative;
 	top: 20px;
 }
+.member p{
+	text-aline: center;
+	margin: 30px 120px 0 21px;
+	color: #000000;
+}
 .main_contact {
 	height: 163px;
 	background-color: #aaa;
