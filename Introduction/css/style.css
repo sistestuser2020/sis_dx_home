@@ -196,6 +196,7 @@ intro {
 	margin: 0 auto 13px;
 	padding-bottom: 8px;
 	width: 100px;
+	border: double;
 }
 .main_contact {
 	height: 163px;
