@@ -16,7 +16,7 @@ body {
 	margin: 0 auto;
 } #header_inner {
 	height: 85px;
-	position: relative;
+	position: fixed;
 	background: linear-gradient(#000000, #3f3f3f);
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
@@ -30,8 +30,7 @@ body {
 } #header_contact {
 	width: 155px;
 	height: 51px;
-	right: 0;
-} #header_contact_inner {
+	right: 0;} #header_contact_inner {
 	display: block;
 	width: 102px;
 	height: 24px;
