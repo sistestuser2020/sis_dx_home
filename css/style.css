@@ -23,11 +23,12 @@ body {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	margin: auto;
+	/*margin: auto;*/
 } #header_logo {
 	width: 194px;
 	height: 40px;
 	left: 19px;
+	margin: auto;
 } #header_contact {
 	width: 155px;
 	height: 51px;
