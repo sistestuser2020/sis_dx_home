@@ -192,11 +192,11 @@ h4 {
 	font-size: 3rem;
 }
 intro {
-	font-size: 20px;
+	font-size: 50px;
+	border: double;
 	margin: 0 auto 13px;
 	padding-bottom: 8px;
 	width: 100px;
-	border: double;
 }
 .main_contact {
 	height: 163px;
