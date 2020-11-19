@@ -15,7 +15,6 @@ body {
 	width: 960px;
 	margin: 0 auto;
 } #header_inner {
-	width: 1000px;
 	height: 85px;
 	position: relative;
 	background: linear-gradient(#000000, #3f3f3f);
@@ -24,6 +23,7 @@ body {
 	top: 0;
 	bottom: 0;
 	margin: auto;
+	background: linear-gradient(#000000, #3f3f3f);
 } #header_logo {
 	width: 194px;
 	height: 40px;
