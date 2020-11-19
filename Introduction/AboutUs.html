@@ -1,66 +1,83 @@
 
 <!doctype html>
-<html lang="ja">
-
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>テスト用ページ</title>
-	<link rel="stylesheet" href="css/home.min.css" media="all">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+<title>OurVision</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+<script type="text/javascript" async="" src="javascript/script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-
-<body id="page-home">
-	<div id="wrapper" class="js-wrapper line-bg line-bg--home">
-		<div id="header">
-		</div>
-		<div class="nav-modal js-nav-modal">
-		</div>
-		<!-- / .nav-modal -->
-
-		<div class="keyv">
-			<div class="keyv__bg"></div>
-			<!-- / .keyv__bg -->
-
-			<div class="keyv__swiper jsHomeSwiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="keyv-item js-keyv-item">
-							<span class="keyv-wrap-title"><a href="/people/ochi.html" class="keyv-title js-keyv-item-title">
-									<p class="keyv-title__before">
-										<img class="keyv-title__img" src="images/omote1.jpg" alt="落テスト">
-										<span class="keyv-title__txt">テスト１ <br>紹介</span>
-									</p>
-									<p class="keyv-title__after">
-										<img class="keyv-title__img" src="images/ochi.jpg" alt="落テスト裏">
-										<span class="keyv-title__txt">テスト１裏<br><img src="images/ochi.jpg" alt="落テスト裏"></span>
-									</p>
-								</a></span>
-							<img class="keyv__icon" src="images/ochi.jpg" alt="落テスト後">
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="keyv-item js-keyv-item">
-							<span class="keyv-wrap-title"><a href="/people/moto.html" class="keyv-title js-keyv-item-title">
-									<p class="keyv-title__before">
-										<img class="keyv-title__img" src="images/omote2.jpg" alt="本テスト">
-										<span class="keyv-title__txt">テスト２ <br>紹介</span>
-									</p>
-									<p class="keyv-title__after">
-										<img class="keyv-title__img" src="images/moto.jpg" alt="本テスト裏">
-										<span class="keyv-title__txt">テスト２裏<br><img src="images/moto.jpg" alt="本テスト裏"></span>
-									</p>
-								</a></span>
-							<img class="keyv__icon" src="images/moto.jpg" alt="本テスト後">
-						</div>
-					</div>
+<body>
+	<div id="page">
+		<header>
+			<div id="header_inner">
+				<div id="header_logo">
+					<img src="images/logo.jpg">
+				</div>
+				<div id="header_contact">
 				</div>
 			</div>
+		</header>
+		<main>		
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/Vision1.jpg" alt="Vision"></a>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/Vision2.jpg" alt="SP2の画面へ"></a>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/Vision3.jpg" alt="SP3の画面へ"></a>
+				</div>
+			</div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-pagination swiper-pagination-white"></div>
+				<p class = "underScroll">
+				<a href="#section01"><span></span>SCROLL</a>
+			</p>
 		</div>
-		<!-- / .keyv -->
+		<section id="section01">
+				<nav>
+					<ul id="main_nav">
+						<li><a href="#div01">アジャイルWS</a></li>
+						<li><a href="#div03">メンバー紹介</a></li>
+						<li><a href="#div02">活動内容</a></li>
+					</ul>
+				</nav>
+				<div class="contents" id="div01">
+					<div class="left" id="photo01">
+						<img src="images/OverView.jpg" alt="概要"></a>
+					</div>
+					<div class="right text">
+						<h4>アジャイルWS</h4>
+						<p>アジャイルWSでは…（当施策の概要等記載）</p>
+					</div>
+				</div>
+				<div class="contents" id="div02">
+					<div class="left text">
+						<h4>活動内容</h4>
+						<p>活動内容の詳細を記載する</p>
+					</div>
+					<div class="right" id="photo02">
+						<img src="images/Activities.jpg" alt="活動"></a>
+					</div>
+				</div>
+				<div class="contents" id="div03">
+					<div class="member">
+						<intro>メンバー紹介</intro>
+						<p class="intro2">それぞれのメンバーを画像付きで紹介</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+		</footer>
 	</div>
-	<div class="loading js-loading">
-	</div>
-	<script src="javascript/swiper.min.js"></script>
-	<script src="javascript/scrollreveal.js"></script>
 </body>
-
 </html>
