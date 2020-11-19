@@ -200,10 +200,10 @@ intro {
 	position: relative;
 	top: 20px;
 }
-.intro2 {
+.intro2 p{
 	margin: 30px 120px 0 21px;
 	text-aline: center;
-	color: #000000;
+	color: #0000ff;
 }
 .main_contact {
 	height: 163px;
