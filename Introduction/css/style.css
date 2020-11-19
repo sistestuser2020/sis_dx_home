@@ -191,6 +191,12 @@ nav {
 h4 {
 	font-size: 3rem;
 }
+intro {
+	font-size: 20px;
+	margin: 0 auto 13px;
+	padding-bottom: 8px;
+	width: 100px;
+}
 .main_contact {
 	height: 163px;
 	background-color: #aaa;
