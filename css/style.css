@@ -18,7 +18,6 @@ body {
 	width: 100%;
 	height: 85px;
 	position: relative;
-	margin: auto;
 	background: linear-gradient(#000000, #3f3f3f);
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
