@@ -200,7 +200,8 @@ intro {
 	position: relative;
 	top: 20px;
 }
-.member p{
+intro2 {
+	margin: 30px 120px 0 21px;
 	text-aline: center;
 	color: #000000;
 }
