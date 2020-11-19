@@ -265,10 +265,11 @@ footer p {
 .footer_link ul li{
 	display: inline-block;
 	margin-left: 10px;
-	color:#fff;
 	font-size: 25px; /* ulでサイズ0にしたのを戻す */
 }
-
+.footer_link ul li a{
+	color:#fff;
+}
 /* scroll under */
 p a {
 	color: #fff;
