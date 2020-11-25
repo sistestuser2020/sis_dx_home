@@ -19,6 +19,7 @@ body {
 	width: 100%;
 	position: fixed;
 	background-color: (0,0,0,0.4);
+	z-index:2;
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
 	top: 0;
