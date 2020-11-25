@@ -15,9 +15,10 @@ body {
 	width: 960px;
 	margin: 0 auto;
 } #header_inner {
-	height: 85px;
-	position: relative;
-	background: linear-gradient(#000000, #3f3f3f);
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	background-color: (0,0,0,0.4);
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
 	top: 0;
@@ -248,8 +249,9 @@ h4 {
 }
 footer {
 	height: 93px;
-	background: linear-gradient(#778899, #2f4f4f);
-	opacity: 0.9;
+	border-top: 2px solid #336699;
+	border-bottom:15px solid #727272;
+	
 }
 footer p {
 	margin-left: 119px;
