@@ -200,6 +200,9 @@ h4 {
 	font-weight:600;
 	border-bottom: 1px solid black;
 }
+.intro_photo{
+	float: left;
+}
 .main_contact {
 	height: 163px;
 	background-color: #aaa;
