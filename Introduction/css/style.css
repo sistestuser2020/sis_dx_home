@@ -183,7 +183,7 @@ nav {
 	border: 3px solid black;
 	border-left: 0px;
 	border-right: 0px;
-	margin: 20px 100px;
+	margin: 20px 150px;
 }
 .text {
 	background-color: white;
@@ -197,6 +197,7 @@ h4 {
 }
 .member_intro {
 	font-size: 40px;
+	font-weight:600;
 	border-bottom: 1px solid black;
 }
 .main_contact {
