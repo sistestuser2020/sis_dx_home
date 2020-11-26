@@ -202,6 +202,7 @@ h4 {
 }
 .intro_photo{
 	float: left;
+	padding-left: 200px;
 }
 .main_contact {
 	height: 163px;
