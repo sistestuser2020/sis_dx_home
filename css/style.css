@@ -270,20 +270,45 @@ footer p {
 .footer_link ul li a{
 	color:#484848;
 }
-#link01 {
-	background-image: url(../images/FOOTER_TOP.jpeg);
+.footer_link ul li a div.top:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_TOP.jpeg) no-repeat;
+    background-size: contain;
 }
-#link02 {
-	background-image: url(../images/FOOTER_ABOUT US.jpeg);
+.footer_link ul li a div.aboutus:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_ABOUT US.jpeg) no-repeat;
+    background-size: contain;
 }
-#link03 {
-	background-image: url(../images/FOOTER_WIKI.jpeg);
+.footer_link ul li a div.wiki:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_WIKI.jpeg) no-repeat;
+    background-size: contain;
 }
-#link04 {
-	background-image: url(../images/FOOTER_LINK.jpeg);
+.footer_link ul li a div.link:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_LINK.jpeg) no-repeat;
+    background-size: contain;
 }
-#link05 {
-	background-image: url(../images/FOOTER_COFFEE BRAKE.jpeg);
+.footer_link ul li a div.coffeebrake:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_COFFEE BRAKE.jpeg) no-repeat;
+    background-size: contain;
 }
 /* scroll under */
 p a {
