@@ -283,7 +283,7 @@ footer p {
     display: inline-block;
     width: 1em;
     height: 1em;
-    background: url(../images/FOOTER_ABOUT US.jpeg) no-repeat;
+    background: url(../images/FOOTER_ABOUTUS.jpeg) no-repeat;
     background-size: contain;
 }
 .footer_link ul li a div.wiki:before {
@@ -307,7 +307,7 @@ footer p {
     display: inline-block;
     width: 1em;
     height: 1em;
-    background: url(../images/FOOTER_COFFEE BRAKE.jpeg) no-repeat;
+    background: url(../images/FOOTER_COFFEEBRAKE.jpeg) no-repeat;
     background-size: contain;
 }
 /* scroll under */
