@@ -1,10 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
-	var autoSlideTimer = null;
-	var slideTime = 5000;
-	
 	// slideLoop
-	slidesPerGroup: 1,
-	allowTouchMove: false,
 	loop: true,
 	loopFillGroupWithBlank: false,
 	preloadImages: false,
@@ -16,9 +11,9 @@ var mySwiper = new Swiper('.swiper-container', {
 	loopPreventsSlide: false,
 	// slideSpeed (ms)
 	speed: 5000,
-    	centeredSlides : true,
+    centeredSlides : true,
 	slidesPerView: 5.5,
-    	spaceBetween: 80,
+    spaceBetween: 80,
     
 	// autoSlide
 	autoplay: {
@@ -28,64 +23,6 @@ var mySwiper = new Swiper('.swiper-container', {
 		disableOnInteraction: false,
 		reverseDirection: false
 	},
-	breakpoints: {
-		1366: {
-			slidesPerView: 4,
-			spaceBetween: 30,
-			slidesPerGroup: 1,
-			freeMode: true,
-			loop: true,
-			preloadImages: true,
-			speed: 3500,
-			autoplay: {
-				delay: 0,
-				disableOnInteraction: false,
-			}
-		},
-		736: {
-			slidesPerView: 2,
-			slidesPerGroup: 1,
-			spaceBetween: 20,
-			centeredSlides: true,
-			autoplay: {
-				delay: 3000
-			}
-		}
-	},
-	
-	on: {
-		init: function () {
-			if ($(window).width() < 736) {
-				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
-				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item').find('.js-keyv-item-title').addClass('slide-hover');
-			}
-		},
-		slideChangeTransitionStart: function () {
-			if ($(window).width() < 736) {
-				$('.swiper-container').find('.js-keyv-item').removeClass('slide-hover');
-				$('.swiper-container').find('.js-keyv-item-title').removeClass('slide-hover');
-			}
-		},
-		slideChangeTransitionEnd: function () {
-			if ($(window).width() < 736) {
-				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
-				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item-title').addClass('slide-hover');
-			}
-		},
-		autoplay: function () {
-			if (autoSlideTimer != null) {
-				clearInterval(autoSlideTimer);
-				autoSlideTimer = null;
-				slideTime = 5000;
-			}
-			autoSlideTimer = setInterval(function () {
-				slideTime -= 100;
-				if (slideTime < 0) {
-					slideTime = 0;
-				}
-			}, 100);
-		}
-	}
 	
 	// arrowGuide
 	navigation: {
