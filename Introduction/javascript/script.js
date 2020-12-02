@@ -1,5 +1,10 @@
 var mySwiper = new Swiper('.swiper-container', {
+	var autoSlideTimer = null;
+	var slideTime = 5000;
+	
 	// slideLoop
+	slidesPerGroup: 1,
+	allowTouchMove: false,
 	loop: true,
 	loopFillGroupWithBlank: false,
 	preloadImages: false,
@@ -11,9 +16,9 @@ var mySwiper = new Swiper('.swiper-container', {
 	loopPreventsSlide: false,
 	// slideSpeed (ms)
 	speed: 5000,
-    centeredSlides : true,
+    	centeredSlides : true,
 	slidesPerView: 5.5,
-    spaceBetween: 80,
+    	spaceBetween: 80,
     
 	// autoSlide
 	autoplay: {
