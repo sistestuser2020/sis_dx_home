@@ -17,11 +17,32 @@ var mySwiper = new Swiper('.swiper-container', {
     
 	// autoSlide
 	autoplay: {
-		// slideSpeed (ms)
-		delay: 1,
-		stopOnLastSlide: false,
+		delay: 0,
 		disableOnInteraction: false,
-		reverseDirection: false
+	},
+	breakpoints: {
+		1366: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			slidesPerGroup: 1,
+			freeMode: true,
+			loop: true,
+			preloadImages: true,
+			speed: 3500,
+			autoplay: {
+				delay: 0,
+				disableOnInteraction: false,
+			}
+		},
+		736: {
+			slidesPerView: 2,
+			slidesPerGroup: 1,
+			spaceBetween: 20,
+			centeredSlides: true,
+			autoplay: {
+				delay: 3000
+			}
+		}
 	},
 	
 	// arrowGuide
