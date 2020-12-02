@@ -1,5 +1,6 @@
 var mySwiper = new Swiper('.swiper-container', {
 	var slideTime = 5000;
+	var autoSlideTimer = null;
 	// slideLoop
 	loop: true,
 	loopFillGroupWithBlank: false,
