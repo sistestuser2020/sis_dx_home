@@ -1,4 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
+	var slideTime = 5000;
 	// slideLoop
 	loop: true,
 	loopFillGroupWithBlank: false,
@@ -54,6 +55,13 @@ var mySwiper = new Swiper('.swiper-container', {
 	}
 });
 
+$(".swiper-container").mouseenter(function(){
+       swiper.stopAutoplay();
+});
+
+$(".swiper-container").mouseleave(function(){
+       swiper.startAutoplay();
+});
 
 $(function() {
 	$('a[href^="#"]' + 'a:not(".carousel-control")').click(function(){
