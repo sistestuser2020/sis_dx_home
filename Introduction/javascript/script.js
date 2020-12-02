@@ -45,6 +45,40 @@ var mySwiper = new Swiper('.swiper-container', {
 		}
 	},
 	
+	on: {
+		init: function () {
+			if ($(window).width() < 736) {
+				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
+				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item').find('.js-keyv-item-title').addClass('slide-hover');
+			}
+		},
+		slideChangeTransitionStart: function () {
+			if ($(window).width() < 736) {
+				$('.jsHomeSwiper').find('.js-keyv-item').removeClass('slide-hover');
+				$('.jsHomeSwiper').find('.js-keyv-item-title').removeClass('slide-hover');
+			}
+		},
+		slideChangeTransitionEnd: function () {
+			if ($(window).width() < 736) {
+				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
+				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item-title').addClass('slide-hover');
+			}
+		},
+		autoplay: function () {
+			if (autoSlideTimer != null) {
+				clearInterval(autoSlideTimer);
+				autoSlideTimer = null;
+				slideTime = 5000;
+			}
+			autoSlideTimer = setInterval(function () {
+				slideTime -= 100;
+				if (slideTime < 0) {
+					slideTime = 0;
+				}
+			}, 100);
+		}
+	}
+	
 	// arrowGuide
 	navigation: {
 		nextEl: '.swiper-button-next',
