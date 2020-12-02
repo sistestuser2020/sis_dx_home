@@ -57,6 +57,14 @@ var mySwiper = new Swiper('.swiper-container', {
 	}
 });
 
+$(".swiper-container").mouseenter(function(){
+       swiper.stopAutoplay();
+});
+
+$(".swiper-container").mouseleave(function(){
+       swiper.startAutoplay();
+});
+
 $(function() {
 	$('a[href^="#"]' + 'a:not(".carousel-control")').click(function(){
 	var speed = 750;
