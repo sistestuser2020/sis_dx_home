@@ -57,13 +57,42 @@ var mySwiper = new Swiper('.swiper-container', {
 	}
 });
 
-$(".swiper-container").mouseenter(function(){
-       swiper.stopAutoplay();
-});
+var $slider = $swiper.$el.children('.swiper-wrapper');
+			var curStyle;
+			$('.jsHomeSwiper').on('mouseenter', function (e) {
+				$swiper.autoplay.stop();
 
-$(".swiper-container").mouseleave(function(){
-       swiper.startAutoplay();
-});
+				clearInterval(autoSlideTimer);
+				autoSlideTimer = null;
+
+				// Calculate transition-duration
+				curStyle = $slider.attr('style');
+				var curStyleArr = curStyle.split('; ');
+				var trsDuration;
+				for (let i = 0; i < curStyleArr.length; i++) {
+					if (curStyleArr[i].indexOf('transition-duration') !== -1) {
+						trsDuration = curStyleArr[i].split(': ')[1];
+					}
+				}
+				curStyle = curStyle.replace(trsDuration, slideTime + 'ms');
+
+				// Stop slider where it be
+				$slider.css({
+					'transform': $slider.css('transform'),
+					'transition-duration': '0s'
+				});
+			});
+			$('.jsHomeSwiper').on('mouseleave', function (e) {
+				if (curStyle) {
+					$swiper.autoplay.start();
+					$slider.attr('style', curStyle);
+				}
+			});
+			$(window).on("pageshow", function (event) {
+				if (event.originalEvent.persisted) {
+					window.location.reload();
+				}
+			});
 
 $(function() {
 	$('a[href^="#"]' + 'a:not(".carousel-control")').click(function(){
