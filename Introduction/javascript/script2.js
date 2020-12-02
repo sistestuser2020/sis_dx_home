@@ -88,11 +88,6 @@ var $slider = $swiper.$el.children('.swiper-wrapper');
 					$slider.attr('style', curStyle);
 				}
 			});
-			$(window).on("pageshow", function (event) {
-				if (event.originalEvent.persisted) {
-					window.location.reload();
-				}
-			});
 
 $(function() {
 	$('a[href^="#"]' + 'a:not(".carousel-control")').click(function(){
