@@ -25,22 +25,6 @@ var mySwiper = new Swiper('.swiper-container', {
 		disableOnInteraction: false,
 		reverseDirection: false
 	},
-			  
-	on: {
-		autoplay: function () {
-			if (autoSlideTimer != null) {
-				clearInterval(autoSlideTimer);
-				autoSlideTimer = null;
-				slideTime = 5000;
-			}
-			autoSlideTimer = setInterval(function () {
-				slideTime -= 100;
-				if (slideTime < 0) {
-					slideTime = 0;
-				}
-			}, 100);
-		}
-	},
 	
 	// arrowGuide
 	navigation: {
