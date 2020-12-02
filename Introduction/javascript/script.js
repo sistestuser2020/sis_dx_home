@@ -17,8 +17,11 @@ var mySwiper = new Swiper('.swiper-container', {
     
 	// autoSlide
 	autoplay: {
-		delay: 0,
+		// slideSpeed (ms)
+		delay: 1,
+		stopOnLastSlide: false,
 		disableOnInteraction: false,
+		reverseDirection: false
 	},
 	breakpoints: {
 		1366: {
