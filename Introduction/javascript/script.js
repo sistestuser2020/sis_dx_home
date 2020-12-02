@@ -48,20 +48,20 @@ var mySwiper = new Swiper('.swiper-container', {
 	on: {
 		init: function () {
 			if ($(window).width() < 736) {
-				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
-				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item').find('.js-keyv-item-title').addClass('slide-hover');
+				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
+				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item').find('.js-keyv-item-title').addClass('slide-hover');
 			}
 		},
 		slideChangeTransitionStart: function () {
 			if ($(window).width() < 736) {
-				$('.jsHomeSwiper').find('.js-keyv-item').removeClass('slide-hover');
-				$('.jsHomeSwiper').find('.js-keyv-item-title').removeClass('slide-hover');
+				$('.swiper-container').find('.js-keyv-item').removeClass('slide-hover');
+				$('.swiper-container').find('.js-keyv-item-title').removeClass('slide-hover');
 			}
 		},
 		slideChangeTransitionEnd: function () {
 			if ($(window).width() < 736) {
-				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
-				$('.jsHomeSwiper').find('.swiper-slide-active').find('.js-keyv-item-title').addClass('slide-hover');
+				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item').addClass('slide-hover');
+				$('.swiper-container').find('.swiper-slide-active').find('.js-keyv-item-title').addClass('slide-hover');
 			}
 		},
 		autoplay: function () {
