@@ -18,7 +18,7 @@ body {
 	height: 65px;
 	width: 100%;
 	position: fixed;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(238,249,255,0.7);
 	z-index:2;
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
@@ -26,9 +26,8 @@ body {
 	bottom: 0;
 	margin: auto;
 } #header_logo {
-	width: 194px;
-	height: 40px;
-	left: 19px;
+	float: left;
+	padding-left: 30px;
 } #header_contact {
 	width: 155px;
 	height: 51px;
@@ -250,7 +249,7 @@ h4 {
 }
 footer {
     height: 93px;
-    border-top: 2px solid #336699;
+    border-top: 4px solid #517D99;
     display: flex;
     justify-content: center;
     align-items: center;
