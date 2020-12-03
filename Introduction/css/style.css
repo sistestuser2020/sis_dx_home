@@ -202,9 +202,13 @@ h4 {
 	font-weight:600;
 	border-bottom: 1px solid black;
 }
+.intro_photo p{
+	margin: 20px;
+}
 .intro_photo{
 	float: left;
-	padding-left: 180px;
+	padding-left: 220px;
+	text-align:center;
 }
 .main_contact {
 	height: 163px;
