@@ -275,8 +275,11 @@ h4 {
 	font-size: 1.3rem;
 }
 footer {
-	height: 93px;
-	background-color: #aaa;
+    height: 93px;
+    border-top: 4px solid #517D99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer p {
 	margin-left: 119px;
