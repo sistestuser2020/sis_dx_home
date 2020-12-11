@@ -17,17 +17,19 @@ body {
 	width: 960px;
 	margin: 0 auto;
 } #header_inner {
-	height: 85px;
-	position: relative;
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(238,249,255,0.7);
+	z-index:2;
 } #header_logo,#header_contact,#header_text {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	margin: auto;
 } #header_logo {
-	width: 194px;
-	height: 40px;
-	left: 19px;
+	float: left;
+	padding-left: 30px;
 } #header_contact {
 	width: 155px;
 	height: 51px;
@@ -280,6 +282,60 @@ footer p {
 	margin-left: 119px;
 	font-size: 0.75rem;
 	line-height: 93px;
+}
+.footer_link ul {
+    text-align: center;
+    margin-left: -10px;
+    font-size: 0;
+    font-family: 'Dosis', sans-serif;
+}
+.footer_link ul li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 25px; 
+}
+.footer_link ul li a{
+	color:#484848;
+}
+.footer_link ul li a div.top:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_TOP.jpeg) no-repeat;
+    background-size: contain;
+}
+.footer_link ul li a div.aboutus:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_ABOUTUS.jpeg) no-repeat;
+    background-size: contain;
+}
+.footer_link ul li a div.wiki:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_WIKI.jpeg) no-repeat;
+    background-size: contain;
+}
+.footer_link ul li a div.link:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_LINK.jpeg) no-repeat;
+    background-size: contain;
+}
+.footer_link ul li a div.coffeebrake:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url(../images/FOOTER_COFFEEBRAKE.jpeg) no-repeat;
+    background-size: contain;
 }
 
 /* scroll under */
