@@ -299,6 +299,9 @@ h4 {
 	color: #fff;
 	font-size: 1.3rem;
 }
+.wiki_main_area {
+	min-height:900px
+}
 footer {
     height: 93px;
     border-top: 4px solid #517D99;
