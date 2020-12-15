@@ -51,10 +51,16 @@ body {
 	right: 155px;
 } #header_main_img {
 	width:75%;
-	min-height:500px;
+	min-height:450px;
 	margin-left:30%;
 	background:url(../images/AboutUs.png);
 	border-bottom-left-radius:100px;
+} #header_main_title {
+	position:relative;
+	bottom:100px;
+	left:90px;
+	width:10%;
+	padding:0px;
 } #header_text p {
 	font-size: 0.9rem;
 } #main_image_Vision {
