@@ -131,6 +131,20 @@ h2 {
 	display: table-cell;
 	vertical-align: middle;
 }
+.CoffeeBrake_Top {
+    	background-position: center top;
+    	background-image: url(../images/CoffeeBrake_Top.jpg);
+    	background-size: cover;
+    	height: 550px;
+}
+.CoffeeBrake_Title {
+    	padding-top: 100px;
+    	padding-left: 100px;
+    	position: absolute;
+    	font-size: xxx-large;
+    	color: #fff;
+    	text-align: right;
+}
 nav {
 	height: 396px;
 	width: 100%;
@@ -142,6 +156,7 @@ nav {
 	overflow: hidden;
 	margin: 0 auto;
 	padding: 88px 0;
+	color: #ffffff;
 } #main_nav li {
 	float: left;
 	height: 225px;
@@ -159,8 +174,8 @@ nav {
 	width: 21px;
 	height: 21px;
 	margin: auto;
-	border-right: 3px solid #000;
-	border-bottom: 3px solid #000;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
 	transform: rotate(45deg);
 } #main_nav li:last-of-type {
 	float: none;
