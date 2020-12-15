@@ -61,6 +61,19 @@ body {
 	left:90px;
 	width:10%;
 	padding:0px;
+} .main-title {
+	display:block;
+	margin:0 0 20px 0;
+	font-size:5.8rem;
+	font-weight:bolder;
+	line-height:1;
+	color:black;
+	text-align:left;
+} .sub-title {
+	display:block;
+	font-size:1.5rem;
+	color:black;
+	text-align:left;
 } #header_text p {
 	font-size: 0.9rem;
 } #main_image_Vision {
