@@ -53,7 +53,7 @@ body {
 	width:75%;
 	min-height:500px;
 	margin-left:30%;
-	background:url(sis_dx_home/Introduction/images/AboutUs.png);
+	background:url(../images/AboutUs.png);
 	border-bottom-left-radius:100px;
 } #header_text p {
 	font-size: 0.9rem;
