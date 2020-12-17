@@ -49,13 +49,13 @@ body {
 	width: 243px;
 	height: 29px;
 	right: 155px;
-} #header_main_img {
+} #Wiki_Top_img {
 	width:75%;
 	min-height:450px;
 	margin-left:30%;
-	background:url(../images/Wiki_Top.png);
+	background:url(../images/Wiki_Top.jpg);
 	border-bottom-left-radius:100px;
-} #header_main_title {
+} #Wiki_Top_title {
 	position:relative;
 	bottom:100px;
 	left:90px;
