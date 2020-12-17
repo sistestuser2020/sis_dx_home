@@ -53,8 +53,9 @@ body {
 	width:75%;
 	min-height:450px;
 	margin-left:30%;
-	background:url(../images/Wiki_Top.jpg);
+	background:url(../images/Wiki_Top.jpg)no-repeat;
 	border-bottom-left-radius:100px;
+	background-size:cover;
 } #Wiki_Top_title {
 	position:relative;
 	bottom:100px;
