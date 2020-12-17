@@ -314,13 +314,8 @@ h4 {
     margin-bottom: 2px;
     font-size: 20px;
 }
-.intro_photo p{
-	margin: 20px;
-}
-.intro_photo{
-	float: left;
-	padding-left: 220px;
-	text-align:center;
+#parent .child .read{
+    margin: 10px auto;
 }
 .main_contact {
 	height: 163px;
