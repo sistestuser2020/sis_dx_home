@@ -299,7 +299,6 @@ h4 {
 }
 #parent {
 	width: 1500px;
-	margin-right: -20px;
 }
 #parent .child {
 	width: 200px;
