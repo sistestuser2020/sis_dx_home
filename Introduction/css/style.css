@@ -293,8 +293,9 @@ h4 {
 	border-bottom: 1px solid black;
 }
 #introductionBox {
-	width: 640px;
+	width: 1000px;
 	margin: 0 auto;
+	margin-right: 435px;
 }
 #parent {
 	width: 660px;
@@ -302,8 +303,8 @@ h4 {
 }
 #parent .child {
 	width: 200px;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-right: 120px;
+	margin-bottom: 100px;
 	float: left;
 	display: inline;
 	font-size: 12px;
