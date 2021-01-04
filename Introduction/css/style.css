@@ -292,13 +292,16 @@ h4 {
 	font-weight:600;
 	border-bottom: 1px solid black;
 }
-#introductionBox {
-	width: 1000px;
+.introductionBox {
+	max-width: 1165px;
 	margin: 0 auto;
-	margin-right: 435px;
 }
-#parent {
-	width: 1500px;
+.parent {
+	width: 1360px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: -30px;
 }
 #parent .child {
 	width: 200px;
