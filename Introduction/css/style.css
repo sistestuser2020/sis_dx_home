@@ -293,11 +293,11 @@ h4 {
 	border-bottom: 1px solid black;
 }
 .introductionBox {
-	max-width: 1165px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 .parent {
-	width: 1360px;
+	width: 1365px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
