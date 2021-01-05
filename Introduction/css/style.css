@@ -470,9 +470,6 @@ input[name="switch"] {
 }
 
 /* :::::: slide :::::: */
-body {
-	overflow: hidden;
-}
 .tabContents {
 	display: flex;
 	width: 300%;
