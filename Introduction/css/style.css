@@ -301,7 +301,8 @@ h4 {
 }
 .img-box img:hover {
 	transform: scale(1.15);
-	transition-duration: 0.5s;
+	transition-duration: 0.8s;
+	overflow:hidden;
 }
 .parent {
 	width: 1800px;
