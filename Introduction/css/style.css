@@ -136,18 +136,21 @@ h2 {
     	background-position: center top;
     	background-image: url(../images/CoffeeBrake_Top.jpg);
     	background-size: cover;
-    	height: 550px;
+    	height: 300px;
 }
 .CoffeeBrake_Title {
+    	width: 100%;
     	padding-top: 100px;
-    	padding-left: 80px;
     	position: absolute;
-    	font-size: xxx-large;
+    	font-size: 70px;
     	color: #fff;
     	text-align: right;
 }
-.main_coffee {
-    padding-top: 200px;
+.Coffee_Main {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: block;
 }
 nav {
 	height: 396px;
@@ -379,6 +382,111 @@ p.name{
 }
 .wiki_main_area {
 	min-height:900px
+}
+/* :::::: COFFEE BRAKE :::::: */
+input[name="switch"] {
+	display: none;
+}
+
+/* :::::: button :::::: */
+.tabBtn {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	margin: 0 0 1px;
+	padding: 0;
+	text-align: center;
+}
+.tabBtn li {
+	flex-basis: 33.3%;
+	background: #517d99;
+}
+.tabBtn li:not(:last-child) {
+	border-right: 1px solid white;
+}
+.tabBtn label {
+	display: block;
+	cursor: pointer;
+	padding: 10px 0;
+	color: white;
+	transition: background .3s;
+}
+.tabBtn label:hover {
+	background: rgba(205,92,92,.5);
+}
+
+/* :::::: contents :::::: */
+.tabContents section {
+	padding: 20px;
+	background: white;
+}
+.tabContents h2 {
+	margin: 0 0 .5em;
+	font-size: 18px;
+}
+.tabContents p {
+	font-size: 12px;
+}
+.tabContents p a {
+	color: #517d99;
+}
+.tabContents figure {
+	float: left;
+	width: 30%;
+	min-width: 120px;
+	margin: 0 1em 0 0;
+}
+.tabContents figure img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.tabContents section::after {
+	content: "";
+	display: block;
+	clear: left;
+}
+
+/* :::::: mechanism :::::: */
+.tabContents section {
+	opacity: .1;
+}
+.tabContents section {
+	transition: opacity .3s;
+}
+#tab-1:checked ~ .tabBtn label[for="tab-1"],
+#tab-2:checked ~ .tabBtn label[for="tab-2"],
+#tab-3:checked ~ .tabBtn label[for="tab-3"]{
+	background: #b0b56b;
+}
+#tab-1:checked ~ .tabContents #section-1,
+#tab-2:checked ~ .tabContents #section-2,
+#tab-3:checked ~ .tabContents #section-3{
+	opacity: 1;
+	background: white;
+}
+
+/* :::::: slide :::::: */
+body {
+	overflow: hidden;
+}
+.tabContents {
+	display: flex;
+	width: 300%;
+	transition: transform .6s;
+}
+.tabContents section {
+	flex-basis: 33.3%;
+	opacity: .1;
+	transition: opacity .3s;
+}
+#tab-1:checked ~ .tabContents {
+	transform: translateX(0);
+}
+#tab-2:checked ~ .tabContents {
+	transform: translateX(-33.3%);
+}
+#tab-3:checked ~ .tabContents {
+	transform: translateX(-66.6%);
 }
 footer {
     height: 93px;
