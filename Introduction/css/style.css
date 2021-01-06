@@ -389,7 +389,7 @@ p.name{
 	font-size: 1.3rem;
 }
 .wiki_main_area {
-	min-height:900px
+	min-height:900px;
 	padding:50px 0;
 }
 .tools_area {
