@@ -390,6 +390,7 @@ p.name{
 }
 .wiki_main_area {
 	min-height:900px
+	padding:50px 0;
 }
 .tools {
 	border-top:9px solid black;
@@ -408,7 +409,7 @@ p.name{
 	position:relative;
 	top:-1em;
 	padding:0 1em;
-	font-size:xxx-large;
+	font-size:40px;
 }
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
