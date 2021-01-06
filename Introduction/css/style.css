@@ -414,6 +414,28 @@ p.name{
 	padding:0 1em;
 	font-size:35px;
 }
+.ajile_area {
+	height:400px;
+}
+.agile {
+	border-top:7px solid black;
+	border-bottom:0px solid;
+	height:1em;
+	text-align:center;
+	overflow:visible;
+}
+.agile::after {
+	content:"ゼロからのアジャイル";
+	background:white;
+	color:black;
+	display:inline-block;
+	height:2em;
+	line-height:2em;
+	position:relative;
+	top:-1em;
+	padding:0 1em;
+	font-size:35px;
+}
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
 	display: none;
