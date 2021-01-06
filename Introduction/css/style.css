@@ -392,8 +392,11 @@ p.name{
 	min-height:900px
 	padding:50px 0;
 }
+.tools_area {
+	height:400px;
+}
 .tools {
-	border-top:9px solid black;
+	border-top:7px solid black;
 	border-bottom:0px solid;
 	height:1em;
 	text-align:center;
@@ -409,7 +412,7 @@ p.name{
 	position:relative;
 	top:-1em;
 	padding:0 1em;
-	font-size:40px;
+	font-size:35px;
 }
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
