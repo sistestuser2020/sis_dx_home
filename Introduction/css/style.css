@@ -391,6 +391,25 @@ p.name{
 .wiki_main_area {
 	min-height:900px
 }
+.tools {
+	border-top:9px solid black;
+	border-bottom:0px solid;
+	height:1em;
+	text-align:center;
+	overflow:visible;
+}
+.tools::after {
+	content:"ツール説明";
+	background:white;
+	color:black;
+	display:inline-block;
+	height:2em;
+	line-height:2em;
+	position:relative;
+	top:-1em;
+	padding:0 1em;
+	font-size:xxx-large;
+}
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
 	display: none;
