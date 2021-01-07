@@ -395,7 +395,7 @@ p.name{
 	display:block;
 	margin:100px;
 }
-#wiki_main_area .topic01 .topic02 {
+#wiki_main_area .topic01 {
 	border-top:7px solid black;
 	border-bottom:0px solid;
 	border-right:0px solid;
@@ -404,7 +404,7 @@ p.name{
 	text-align:center;
 	overflow:visible;
 }
-.topic01::after {
+#wiki_main_area .topic01::after {
 	content:"ツール説明";
 	background:white;
 	color:black;
@@ -416,7 +416,16 @@ p.name{
 	padding:0 1em;
 	font-size:35px;
 }
-.topic02::after {
+#wiki_main_area .topic02 {
+	border-top:7px solid black;
+	border-bottom:0px solid;
+	border-right:0px solid;
+	border-left:0px solid;
+	height:1em;
+	text-align:center;
+	overflow:visible;
+}
+#wiki_main_area .topic02::after {
 	content:"ゼロからのアジャイル";
 	background:white;
 	color:black;
