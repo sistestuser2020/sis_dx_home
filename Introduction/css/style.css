@@ -445,14 +445,16 @@ p.name{
 #toolImg {
 	margin-top:25px;
 	width:650px;
+	z-index:2;
 }
 .toolTxt{
 	position:absolute;
 	right:0;
 	width:750px;
-	height:550px;
+	height:400px;
 	background-color:#f6f6f6;
-	top:105px;
+	top:120px;
+	z-index:1;
 }
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
