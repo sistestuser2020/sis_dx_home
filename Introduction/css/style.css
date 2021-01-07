@@ -404,7 +404,7 @@ p.name{
 	text-align:center;
 	overflow:visible;
 }
-.topick01::after {
+.topic01::after {
 	content:"ツール説明";
 	background:white;
 	color:black;
@@ -416,7 +416,7 @@ p.name{
 	padding:0 1em;
 	font-size:35px;
 }
-.topick02::after {
+.topic02::after {
 	content:"ゼロからのアジャイル";
 	background:white;
 	color:black;
