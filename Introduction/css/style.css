@@ -392,7 +392,7 @@ p.name{
 	padding:50px 0;
 }
 #wiki_main_area .topic {
-	display:brock;
+	display:block;
 	margin:100px;
 }
 #wiki_main_area .topic01 .topic02 {
