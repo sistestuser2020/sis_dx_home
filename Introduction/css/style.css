@@ -437,6 +437,23 @@ p.name{
 	padding:0 1em;
 	font-size:35px;
 }
+.toolBox {
+	display:flex;
+	position:relative;
+	margin-bottom:300px
+}
+#toolImg {
+	margin-top:25px;
+	width:650px;
+}
+.toolText{
+	position:absolute;
+	right:0;
+	width:750px;
+	height:550px;
+	background-color:#f6f6f6;
+	top:105px;
+}
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
 	display: none;
