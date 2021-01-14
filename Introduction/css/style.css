@@ -1,4 +1,4 @@
-﻿.swiper-container-free-mode > .swiper-wrapper{-webkit-transition-timing-function:linear!important; -o-transition-timing-function:linear!important; transition-timing-function:linear!important; }
+.swiper-container-free-mode > .swiper-wrapper{-webkit-transition-timing-function:linear!important; -o-transition-timing-function:linear!important; transition-timing-function:linear!important; }
 
 html,body,div,span,iframe,h1,h2,h3,h4,h5,p,a,img,ul,li,table,tr,th,td,tbody,footer,header,main,nav,section {
 	margin: 0;
@@ -201,7 +201,7 @@ nav {
 	text-align: center;
 	padding: 83px 0 100px;
 } #div03 {
-	height: 1100px;
+	height: 940px;
 }
 #main_nav_b {
 	width: 67.5%;
@@ -297,8 +297,9 @@ h4 {
 	border-bottom: 1px solid black;
 }
 .introductionBox {
-	max-width: 1650px;
-	margin: 0 auto;
+	max-width: 2000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .img-box img:hover {
 	transform: scale(1.15);
@@ -306,18 +307,23 @@ h4 {
 }
 .img-box{
   	overflow:hidden;
+  	width: 100%;
+  	height: auto;
+  	margin-top: 20px;
 }
 .parent {
-	width: 1800px;
+	width: 1270px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin-left: -30px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
 }
 .txt-setbox{
-	width: calc(88% - 30px);
-	min-height: 200px;
-	margin: 0 -9px;
+	min-width: 10em;
+	min-height: 13em;
+	margin: 1px 4px;
 	padding: 3px 3px;
 	background-color: #f0fff0;
 	border: outset;
@@ -325,6 +331,7 @@ h4 {
 p.name{
 	font-weight: bold;
 	font-size: 20px;
+	margin: 12px;
 }
 .main_contact {
 	height: 163px;
