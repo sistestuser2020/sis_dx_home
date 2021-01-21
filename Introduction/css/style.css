@@ -456,17 +456,17 @@ p.name{
 }
 #toolImg {
 	margin-right:500px;
-	width:650px;
+	width:550px;
 	z-index:-1;
 	box-shadow:4px 4px 4px grey;
 }
 .toolTxt{
 	position:absolute;
-	margin-left:500px;
-	width:700px;
+	margin-left:450px;
+	width:600px;
 	height:400px;
 	background-color:#f6f6f6;
-	top:100px;
+	top:80px;
 	z-index:-2;
 }
 /* :::::: COFFEE BRAKE :::::: */
