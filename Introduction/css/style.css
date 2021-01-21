@@ -400,6 +400,7 @@ p.name{
 }
 #wiki_main_area {
 	padding:50px 0;
+	text-align:center;
 }
 #wiki_main_area .topic {
 	display:block;
@@ -448,23 +449,24 @@ p.name{
 	font-size:35px;
 }
 .toolBox {
-	display:flex;
+	display:inline-block;
 	position:relative;
+	margin-top:30px;
 	margin-bottom:300px
 }
 #toolImg {
-	margin-top:25px;
+	margin-right:500px;
 	width:650px;
 	z-index:-1;
 	box-shadow:4px 4px 4px grey;
 }
 .toolTxt{
 	position:absolute;
-	right:0;
-	width:750px;
+	margin-left:500px;
+	width:700px;
 	height:400px;
 	background-color:#f6f6f6;
-	top:120px;
+	top:100px;
 	z-index:-2;
 }
 /* :::::: COFFEE BRAKE :::::: */
