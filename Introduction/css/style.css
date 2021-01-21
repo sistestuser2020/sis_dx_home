@@ -456,13 +456,13 @@ p.name{
 }
 #toolImg {
 	margin-right:500px;
-	width:550px;
+	width:600px;
 	z-index:-1;
 	box-shadow:4px 4px 4px grey;
 }
 .toolTxt{
 	position:absolute;
-	margin-left:450px;
+	margin-left:550px;
 	width:600px;
 	height:400px;
 	background-color:#f6f6f6;
