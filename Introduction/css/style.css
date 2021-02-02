@@ -302,10 +302,6 @@ h4 {
 	font-weight:600;
 	border-bottom: 1px solid black;
 }
-.introductionBox {
-	margin-left: auto;
-	margin-right: auto;
-}
 .img-box img:hover {
 	transform: scale(1.15);
 	transition-duration: 1.2s;
