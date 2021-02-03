@@ -556,7 +556,7 @@ input[name="switch"] {
 	display: flex;
     	justify-content: center;
     	align-items: center;
-    	font-size: xxx-large;
+    	font-size: xx-large;
 }
 #tab-1:checked ~ .tabContents #section-1,
 #tab-2:checked ~ .tabContents #section-2,
