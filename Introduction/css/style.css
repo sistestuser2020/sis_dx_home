@@ -251,6 +251,10 @@ nav {
 	height: auto;
 	overflow: hidden;
 }
+.contents2 {
+	height: 800;
+	overflow: hidden;
+}
 .left {
 	float: left;
 	height: 400px;
