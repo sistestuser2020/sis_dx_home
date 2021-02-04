@@ -248,7 +248,7 @@ nav {
 }
 
 .contents {
-	height: 800px;
+	height: auto;
 	overflow: hidden;
 }
 .left {
