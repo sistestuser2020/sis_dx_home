@@ -745,21 +745,22 @@ input[name="slideshow"] {
 }
 /* :::::: slideContents :::::: */
 .slideContents {
-	display: flex;
 	position: relative;
-	width: 400%;
-	background:white;
 	text-align: center;
 	-webkit-user-select: none;
 	user-select: none;
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: transform .6s;
 }
 .slideContents section {
-	width: 25%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(100%);
+	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .slideContents section img {
 	max-width: 100%;
-	padding: 0 50px;
 	box-sizing: border-box;
 	vertical-align: middle;
 }
@@ -823,17 +824,32 @@ input[name="slideshow"] {
 	right: calc(50% - 6px);
 }
 /* :::::: mechanism :::::: */
-#switch1:checked ~ .slideContents {
-	transform: translateX(0);
+#switch1:checked ~ .slideContents #slide1,
+#switch2:checked ~ .slideContents #slide2,
+#switch3:checked ~ .slideContents #slide3,
+#switch4:checked ~ .slideContents #slide4{
+	position: relative;
+	transform: none;
 }
-#switch2:checked ~ .slideContents {
-	transform: translateX(-25%);
+#switch1:checked ~ .slideContents #slide4,
+#switch1:checked ~ .slideContents #slide3,
+#switch2:checked ~ .slideContents #slide1,
+#switch2:checked ~ .slideContents #slide4,
+#switch3:checked ~ .slideContents #slide2,
+#switch3:checked ~ .slideContents #slide1,
+#switch4:checked ~ .slideContents #slide3,
+#switch4:checked ~ .slideContents #slide2 {
+	transform: translateX(-100%);
 }
-#switch3:checked ~ .slideContents {
-	transform: translateX(-50%);
-}
-#switch4:checked ~ .slideContents {
-	transform: translateX(-75%);
+#switch1:checked ~ .slideContents #slide3,
+#switch1:checked ~ .slideContents #slide4,
+#switch2:checked ~ .slideContents #slide4,
+#switch2:checked ~ .slideContents #slide1,
+#switch3:checked ~ .slideContents #slide1,
+#switch3:checked ~ .slideContents #slide2,
+#switch4:checked ~ .slideContents #slide2,
+#switch4:checked ~ .slideContents #slide3 {
+	transition-duration: 0s;
 }
 /* :::::: arrow mechanism :::::: */
 .arrow label {
