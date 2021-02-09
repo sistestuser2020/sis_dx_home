@@ -56,7 +56,7 @@ function getCountSet(id){
                   $(obj).append("<div style='clear: both; display: block;'></div>"); 
                  }
                }).fail(function(data){
-                var res = "error";
+                var res = "えら～";
                 $(target).text(res);
                 console.log(data);
              });
