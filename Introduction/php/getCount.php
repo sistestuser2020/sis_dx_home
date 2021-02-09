@@ -1,5 +1,4 @@
 <?php
-// *メイン ****************************************
 if (!empty($_GET['countid'])) {
     $id   = empty($_GET['countid']) ? "" : $_GET['countid'];
     $res = getVoteCount($id);
@@ -8,10 +7,7 @@ if (!empty($_GET['countid'])) {
     echo json_encode("syntax error");
  }
 
-// *関数 ******************************************
-
 function getVoteCount($id){
- //print "***********************";
  //カウント数を書きだしてあるファイル名
  $fileName = "log/" . $id . ".count";
 
@@ -27,6 +23,4 @@ function getVoteCount($id){
 
 return $vote;
 }
-
-
 ?>
