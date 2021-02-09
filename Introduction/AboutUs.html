@@ -8,9 +8,9 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/home.min.css" media="all">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 <script type="text/javascript" async="" src="javascript/script.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="javascript/clickCount-getCount.js"></script>	
 </head>
 <body>
@@ -247,14 +247,13 @@
 						<div class="support_title">Support Message</div>
 						<div>カイゼン案、バグを見つけたらぜひ教えてください。</div>
 					</div>
-					<p>いいねボタン</p>
+					<p>GOODボタン</p>
 					<div class="letsVote" data-id="ex01-balloon-r"><!-- カウントを右 親要素 -->
 						<div>
   							<img src="images/thumb_up.png"> <!-- いいね！ボタンアイコン画像 -->
  						</div>
- 					<div id="ex01-balloon-r" class="balloon_right"> <!-- いいね！カウント数表示域 --></div>
+ 						<div id="ex01-balloon-r" class="balloon_right></div>
 					</div>
-				<!-- いいね！カウント ページロード時表示 javascript -->
 					<script>getCountSet("ex01-balloon-r");</script>
 				</div>
 		</section>
