@@ -12,7 +12,7 @@ $(function(){
           var nowCount = Number($(numHtml).html()); //現在のカウント数
           var newCount = nowCount + 1;
           var timer = 20;                      //クッキーの有効期限（投票を制限する秒数） time()+60*60*24*30 はクッキーの有効期限を 30 日後にセット
-          var phpurl = "php/vote.php";
+          var phpurl = "https://sistestuser2020.github.io/sis_dx_home/Introduction/php/vote.php";
                console.log(phpurl);
           $.ajax({
                type : "POST",
@@ -39,7 +39,7 @@ $(function(){
 // getCount.php起動関数 2018.3.11 /////////////////////////////////////////////////////
 function getCountSet(id){
         var target = "#" + id;
-        var phpurl = "php/getCount.php";
+        var phpurl = "https://sistestuser2020.github.io/sis_dx_home/Introduction/php/getCount.php";
         var obj =  $(target).parent("div"); 
         $(obj).css({ "cursor": "pointer" });
         $.ajax({
@@ -56,7 +56,7 @@ function getCountSet(id){
                   $(obj).append("<div style='clear: both; display: block;'></div>"); 
                  }
                }).fail(function(data){
-                var res = "えら～";
+                var res = "えらー";
                 $(target).text(res);
                 console.log(data);
              });
