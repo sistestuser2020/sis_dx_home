@@ -269,7 +269,7 @@ nav {
 }
 
 .contents {
-	height: auto;
+	height: 1000px;
 	overflow: hidden;
 }
 .contents2 {
@@ -322,7 +322,7 @@ p.img-box {
 h4 {
 	font-size: 3rem;
 }
-.member_intro {
+.title_container {
 	font-size: 40px;
 	font-weight:600;
 	border-bottom: 1px solid black;
@@ -356,6 +356,9 @@ p.name{
 	font-weight: bold;
 	font-size: 20px;
 	margin: 12px;
+}
+.support{
+	height: 1000px;
 }
 .main_contact {
 	height: 163px;
