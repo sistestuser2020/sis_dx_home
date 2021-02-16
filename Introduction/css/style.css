@@ -89,6 +89,14 @@ body {
 	background: url(sis_dx_home/Introduction/images/Vision.png) no-repeat;
 	background-size:cover;
 }
+.our_vision{
+	background-image:url(sis_dx_home/Introduction/images/Vision1.png);
+	background-size:cover;
+	height:1000px;
+}
+.our_vision_container{
+	color:red;
+}
 h1 {
 	position: absolute;
 	top: 0;
