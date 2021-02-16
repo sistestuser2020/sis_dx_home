@@ -95,8 +95,13 @@ body {
 	height:650px;
 }
 .our_vision_container{
-	color:white;
-	width:1355px;
+	color: yellow;
+	padding: 350px 0 0 40px;
+}
+.our_vision_container h2 {
+    color: #ffd700;
+    font-size: 80px;
+    opacity: 0.9;
 }
 h1 {
 	position: absolute;
