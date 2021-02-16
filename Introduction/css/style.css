@@ -103,6 +103,12 @@ body {
     font-size: 80px;
     opacity: 0.9;
 }
+.our_vision_container p {
+    color: #fff263;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}
 h1 {
 	position: absolute;
 	top: 0;
