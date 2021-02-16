@@ -92,7 +92,7 @@ body {
 .our_vision{
 	background-image:url(../images/Vision4.jpg);
 	background-size:cover;
-	height:650px;
+	height:950px;
 }
 .our_vision_container{
 	color: yellow;
@@ -105,9 +105,10 @@ body {
 }
 .our_vision_container p {
     color: #fff263;
-    font-size: 30px;
+    font-size: 35px;
     padding-top: 20px;
     font-weight: bold;
+    letter-spacing:2px;
 }
 h1 {
 	position: absolute;
