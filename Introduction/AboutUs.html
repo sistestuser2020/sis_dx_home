@@ -1,3 +1,9 @@
+<?php
+$dir = "/goodbtn";
+require_once $_SERVER['DOCUMENT_ROOT'] . $dir .'/GoodBtn.php';
+$goodBtn = new GoodBtn($dir);
+?>
+
 <!doctype html>
 <html lang="ja">
 <head>
@@ -8,10 +14,15 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/home.min.css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 <script type="text/javascript" async="" src="javascript/script.js"></script>
-<script type="text/javascript" src="javascript/clickCount-getCount.js"></script>	
+<script type="text/javascript" src="javascript/clickCount-getCount.js"></script>
+<?php 
+$goodBtn->head(); 
+?>
 </head>
 <body>
 	<div id="page">
@@ -247,14 +258,7 @@
 						<div class="support_title">Support Message</div>
 						<div>カイゼン案、バグを見つけたらぜひ教えてください。</div>
 					</div>
-					<p>GOODボタン</p>
-					<div class="letsVote" data-id="ex01">
-						<div>
-  							<img src="images/thumb_up.png">
- 						</div>
- 						<div id="ex01" class="balloon_right"></div>
-					</div>
-					<script>getCountSet("ex01");</script>
+					<?php $goodBtn->viewBtn(); ?>
 				</div>
 		</section>
 		</main>
