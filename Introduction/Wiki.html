@@ -128,14 +128,18 @@
 		</footer>
 	</div>
 	<script>
-    		var mySwiper = new Swiper ('.swiper-container', {
-  			loop: true,
-  			slidesPerView: 1,
-  			spaceBetween: 10,
-  			centeredSlides : true,
-  			pagination: '.swiper-pagination',
-  			nextButton: '.swiper-button-next',
-  			prevButton: '.swiper-button-prev'
+    		var mySwiper = new Swiper('.swiper-container', {
+		loop: true,
+		pagination: {
+      		el: '.swiper-pagination',
+    		},
+    		navigation: {
+      		nextEl: '.swiper-button-next',
+      		prevEl: '.swiper-button-prev',
+    		},
+    		scrollbar: {
+      		el: '.swiper-scrollbar',
+    		},
 		})
     	</script>
 </body>
