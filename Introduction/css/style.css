@@ -927,3 +927,15 @@ input[name="slideshow"] {
 #switch4:checked ~ .next label[for="switch1"]{
 	pointer-events: auto;
 }
+
+.swiper-container3 {
+	width:1000px;
+	height;200px;
+	background-color:transparent;
+}
+
+.swiper-slide.wiki{
+	width:500px;
+	margin-top:100px;
+	background-color:transparent;
+}
