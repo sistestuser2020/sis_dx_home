@@ -520,8 +520,8 @@ p.name{
 }
 .toolTxt{
 	position:absolute;
-	margin-left:550px;
-	width:600px;
+	margin-left:500px;
+	width:550px;
 	height:400px;
 	background-color:#f6f6f6;
 	top:80px;
@@ -929,11 +929,10 @@ input[name="slideshow"] {
 }
 
 .swiper-container3 {
-	margin-top:100px;
+	margin-top:20px 0;
 	background-color:transparent;
 }
 
 .swiper-slide.wiki{
-	margin-top:100px;
 	background-color:transparent;
 }
