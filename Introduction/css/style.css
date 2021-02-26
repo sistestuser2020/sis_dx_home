@@ -601,6 +601,13 @@ input[name="switch"] {
 	clear: left;
 }
 
+/* :::::: section :::::: */
+section#section-2 {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
 /* :::::: mechanism :::::: */
 .tabContents section {
 	opacity: .1;
