@@ -602,10 +602,9 @@ input[name="switch"] {
 }
 
 /* :::::: section :::::: */
-section#section-2 {
-    height: 500px;
-    width: 100%;
-    text-align: center;
+section#section-2 { 
+	height:500px
+    	text-align: center;
 }
 
 /* :::::: mechanism :::::: */
