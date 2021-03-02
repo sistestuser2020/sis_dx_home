@@ -6,6 +6,7 @@
 <title>Wiki</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Capriola&family=Staatliches&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/home.min.css" media="all">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -22,94 +23,19 @@
 				<div id="header_contact">
 				</div>
 			</div>
-			<div id="header_main_area">
-				<div id="Wiki_Top_img"></div>
-				<div id="Wiki_Top_title">
-				<h1>
-					<span class="main-title">
-					<span>W</span>
-					<span>i</span>
-					<span>k</span>
-					<span>i</span>
-					</span>
-					<span class="sub-title">アジャイル開発を行うにあたって
-					</span>
-				</div>
-					
-			</div>
 		</header>
 		<main>
-			<div id="wiki_main_area">
-				<div class="topic">
-					<hr class="topic01">
-					</hr>
-				<div class="slideshow">
-        				<input type="radio" name="slideshow" id="switch1" checked="">
-        				<input type="radio" name="slideshow" id="switch2">
-        				<input type="radio" name="slideshow" id="switch3">
-        				<input type="radio" name="slideshow" id="switch4">
-        				<div class="slideContents">
-            					<section id="slide1">
-						<div class="toolBox">
-							<img src="images/JIRA.png" id="toolImg">
-							<div class="toolTxt">
-							<h1>JIRAの説明～</h1>
-							</div>
-						</div></section>
-            					<section id="slide2">
-                					slack
-            					</section>
-            					<section id="slide3">
-                					Git-hub
-            					</section>
-            					<section id="slide4">
-                					4ページ目
-						 </section>
-        				</div>
-        				<p class="arrow prev">
-            					<i class="ico"></i>
-            					<label for="switch1"></label>
-            					<label for="switch2"></label>
-            					<label for="switch3"></label>
-            					<label for="switch4"></label>
-            				</p>
-     					<p class="arrow next">
-            				<i class="ico"></i>
-            				<label for="switch1"></label>
-            				<label for="switch2"></label>
-            				<label for="switch3"></label>
-            				<label for="switch4"></label>
-        				</p>
-    				</div></div>
-				
-				<div class="topic">
-					
-					<hr class="topic02">
-					</hr>
-					<!-- Slider main container -->
-					<div class="swiper-container3">
-    						<!-- Additional required wrapper -->
-    						<div class="swiper-wrapper">
-        						<!-- Slides -->
-        							<div class="swiper-slide wiki">
-									<div class="toolBox">
-									<img src="images/JIRA.png" id="toolImg">
-										<div class="toolTxt">
-										<h1>JIRAの説明～</h1>
-										</div>
-								</div></div>
-							<div class="swiper-slide wiki"><h1>Slide 2</h1></div>
-        							<div class="swiper-slide wiki"><h1>Slide 3</h1></div>
-    						</div>
-   						<!-- If we need pagination -->
-    						<div class="swiper-pagination"></div>
-    
-    						<!-- If we need navigation buttons -->
-    						<div class="swiper-button-prev"></div>
-    						<div class="swiper-button-next"></div>
-					</div>
-				</div>
-			</div>
+			<div class="top_wk">
+                		<img src="../images/Wiki_Top.jpg" alt="TOP画像">
+                		<h1>WIKI</h1>
+                		<p>金融事業本部アジャイル施策を通して得た知識、</br>
+                   		模索しながら確立したチーム開発の記録。
+               	 		</p>
+           			</div>
+           			<div class="area1_wk">
+               			<h2>Tool Description</h2>
+				<h3>ツール説明</h3>
+           		</div>
 		</main>
 		<footer>
 			<div class = "footer_link">	
@@ -127,21 +53,6 @@
 				</ur>
 			</div>
 		</footer>
-	</div>
-<script>
-    		var mySwiper3 = new Swiper('.swiper-container3', {
-		loop: true,
-		slidesPerColumn: 1,
-		pagination: {
-      		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-    		},
-    		navigation: {
-      		nextEl: '.swiper-button-next',
-      		prevEl: '.swiper-button-prev'
-    		}
-		})
-    	</script>	
+	</div>	
 </body>
 </html>
