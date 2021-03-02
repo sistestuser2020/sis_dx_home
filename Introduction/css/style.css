@@ -76,36 +76,6 @@ body {
 	background-color:#FFE6EB;
 	cursor:pointer;
 }
-#Wiki_Top_img {
-	width:75%;
-	min-height:450px;
-	margin-left:30%;
-	background:url(../images/Wiki_Top.jpg)no-repeat;
-	border-bottom-left-radius:100px;
-	background-size:cover;
-} 
-#Wiki_Top_title {
-	position:relative;
-	bottom:100px;
-	left:90px;
-	width:10%;
-	padding:0px;
-} 
-.main-title {
-	display:block;
-	margin:0 0 20px 0;
-	font-size:5.8rem;
-	font-weight:bolder;
-	line-height:1;
-	color:black;
-	text-align:left;
-} 
-.sub-title {
-	display:block;
-	font-size:1.5rem;
-	color:black;
-	text-align:left;
-} 
 #header_text p {
 	font-size: 0.9rem;
 } 
@@ -456,76 +426,11 @@ p.name{
 	color: #fff;
 	font-size: 1.3rem;
 }
-#wiki_main_area {
-	padding:50px 0;
-	text-align:center;
-}
-#wiki_main_area .topic {
-	display:block;
-	margin:100px;
-}
-#wiki_main_area .topic01 {
-	border-top:7px solid black;
-	border-bottom:0px solid;
-	border-right:0px solid;
-	border-left:0px solid;
-	height:1em;
-	text-align:center;
-	overflow:visible;
-}
-#wiki_main_area .topic01::after {
-	content:"ツール説明";
-	background:white;
-	color:black;
-	display:inline-block;
-	height:2em;
-	line-height:2em;
-	position:relative;
-	top:-1em;
-	padding:0 1em;
-	font-size:35px;
-}
-#wiki_main_area .topic02 {
-	border-top:7px solid black;
-	border-bottom:0px solid;
-	border-right:0px solid;
-	border-left:0px solid;
-	height:1em;
-	text-align:center;
-	overflow:visible;
-}
-#wiki_main_area .topic02::after {
-	content:"ゼロからのアジャイル";
-	background:white;
-	color:black;
-	display:inline-block;
-	height:2em;
-	line-height:2em;
-	position:relative;
-	top:-1em;
-	padding:0 1em;
-	font-size:35px;
-}
 .toolBox {
 	display:inline-block;
 	position:relative;
 	margin-top:30px;
 	margin-bottom:300px
-}
-#toolImg {
-	margin-right:500px;
-	width:600px;
-	z-index:-1;
-	box-shadow:4px 4px 4px grey;
-}
-.toolTxt{
-	position:absolute;
-	margin-left:500px;
-	width:550px;
-	height:400px;
-	background-color:#f6f6f6;
-	top:80px;
-	z-index:-2;
 }
 /* :::::: COFFEE BRAKE :::::: */
 input[name="switch"] {
@@ -803,142 +708,72 @@ p a {
 .swiper-slide {
 	background-color: #ffffff;
 }
-/* Wiki　ツール説明 */
-.slideshow {
-	position: relative;
-	overflow: hidden;
+
+/* Wikiページ */
+.top_wk {
+  width: 100%;
 }
-input[name="slideshow"] {
-	display: none;
-}
-/* :::::: slideContents :::::: */
-.slideContents {
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	user-select: none;
-	transition: transform .6s;
-}
-.slideContents section {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	transform: translateX(100%);
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.slideContents section img {
-	max-width: 100%;
-	box-sizing: border-box;
-	vertical-align: middle;
-}
-/* :::::: arrows :::::: */
-.arrow,
-.arrow label,
-.arrow .ico {
-	position: absolute;
-}
-.arrow {
-	top: 0;
-	margin: 0;
-	transition: background .3s;
-}
-.prev {
-	left: 0;
-}
-.next {
-	right: 0;
-}
-.arrow:hover {
-	background: #9b9db31a;
-}
-.arrow,
-.arrow label {
-	cursor: pointer;
-	width: 50px;
-	height: 100%;
-}
-.arrow label {
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-.arrow .ico {
-	top: calc(50% - 6px);
-	width: 12px;
-	height: 12px;
-	border-top: 3px solid #666;
-	opacity: 1;
-}
-.prev .ico {
-	left: 50%;
-	border-left: 3px solid #666;
-	transform: rotate(-45deg);
-	transition: left .3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s;
-}
-.next .ico {
-	right: 50%;
-	border-right: 3px solid #666;
-	transform: rotate(45deg);
-	transition: right .3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity .3s;
-}
-.arrow:hover .ico {
-	opacity: .6;
-}
-.prev:hover .ico {
-	left: calc(50% - 6px);
-}
-.next:hover .ico {
-	right: calc(50% - 6px);
-}
-/* :::::: mechanism :::::: */
-#switch1:checked ~ .slideContents #slide1,
-#switch2:checked ~ .slideContents #slide2,
-#switch3:checked ~ .slideContents #slide3,
-#switch4:checked ~ .slideContents #slide4{
-	position: relative;
-	transform: none;
-}
-#switch1:checked ~ .slideContents #slide4,
-#switch1:checked ~ .slideContents #slide3,
-#switch2:checked ~ .slideContents #slide1,
-#switch2:checked ~ .slideContents #slide4,
-#switch3:checked ~ .slideContents #slide2,
-#switch3:checked ~ .slideContents #slide1,
-#switch4:checked ~ .slideContents #slide3,
-#switch4:checked ~ .slideContents #slide2 {
-	transform: translateX(-100%);
-}
-#switch1:checked ~ .slideContents #slide3,
-#switch1:checked ~ .slideContents #slide4,
-#switch2:checked ~ .slideContents #slide4,
-#switch2:checked ~ .slideContents #slide1,
-#switch3:checked ~ .slideContents #slide1,
-#switch3:checked ~ .slideContents #slide2,
-#switch4:checked ~ .slideContents #slide2,
-#switch4:checked ~ .slideContents #slide3 {
-	transition-duration: 0s;
-}
-/* :::::: arrow mechanism :::::: */
-.arrow label {
-	pointer-events: none;
-}
-#switch1:checked ~ .prev label[for="switch4"],
-#switch2:checked ~ .prev label[for="switch1"],
-#switch3:checked ~ .prev label[for="switch2"],
-#switch4:checked ~ .prev label[for="switch3"],
-#switch1:checked ~ .next label[for="switch2"],
-#switch2:checked ~ .next label[for="switch3"],
-#switch3:checked ~ .next label[for="switch4"],
-#switch4:checked ~ .next label[for="switch1"]{
-	pointer-events: auto;
+.top_wk img {
+  width: 100%;
 }
 
-.swiper-container3 {
-	margin-top:20px 0;
-	background-color:transparent;
+.top_wk h1 {
+  position: absolute;
+  width: 188px;
+  height: 120px;
+  left: 703px;
+  top: 188px;
+
+  font-family: Staatliches, fantasy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 120px;
+  /* identical to box height */
+
+  letter-spacing: 0.15em;
+
+  color: #333333;
 }
 
-.swiper-slide.wiki{
-	background-color:transparent;
+.top_wk p {
+  position: absolute;
+  width: 740px;
+  height: 72px;
+  left: 470px;
+  top: 332px;
+
+  font-family: MS PGothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+
+  color: #333333;
 }
+
+.area1_wk {
+  margin: 100px 0 100px;
+  text-align: center;
+}
+
+.area1_wk h2 {
+  font-family: Capriola;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 15px;
+
+  color: #333333;
+}
+
+.area1_wk h3 {
+  font-family: MS PGothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #333333;
+}
+
