@@ -719,10 +719,11 @@ p a {
 
 .top_wk h1 {
   position: absolute;
-  width: 188px;
+  margin:initial,
+  width: 208px;
   height: 120px;
-  left: 703px;
-  top: 188px;
+  left: 58%;
+  top: 258px;
 
   font-family: Staatliches, fantasy;
   font-style: normal;
@@ -740,8 +741,8 @@ p a {
   position: absolute;
   width: 740px;
   height: 72px;
-  left: 470px;
-  top: 332px;
+  left: 44%;
+  top: 382px;
 
   font-family: MS PGothic;
   font-style: normal;
