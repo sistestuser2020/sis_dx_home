@@ -759,11 +759,13 @@ p a {
 }
 
 .area1_wk h2 {
+  display:initial;
+  text-align:center;
   font-family: Capriola;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 15px;
+  line-height: 36px;
 
   color: #333333;
 }
@@ -773,7 +775,7 @@ p a {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 50px;
 
   color: #333333;
 }
