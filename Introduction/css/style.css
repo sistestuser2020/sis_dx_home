@@ -507,9 +507,12 @@ input[name="switch"] {
 }
 
 /* :::::: section :::::: */
-section#section-2 { 
-	height:500px
-    	text-align: center;
+div#DotEat {
+    font-size: 10px;
+    text-align: right;
+    width: 456px;
+    height: 514px;
+    margin: 0 auto;
 }
 
 /* :::::: mechanism :::::: */
