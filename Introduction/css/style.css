@@ -772,17 +772,18 @@ p a {
 .area1_wk li {
   	display:flex;
   	align-items:center;
+	margin:0 100px;
 }
 .toolImg img {
-   	margin-left:100px;
-   	max-width:800px;
+   	position:relative;
+   	width:700px;
 }
 .toolText {
-	margin-right:100px;
-	width: 630px;
-	height: 190px;
-	left: 696px;
-	top: 969px;
+	position:absolute;
+	width: auto;
+	height: auto;
+    	right:100px;
+	top: auto;
 	font-family: HGSSoeiKakugothicUB;
 	font-style: normal;
 	font-weight: normal;
@@ -790,6 +791,10 @@ p a {
 	line-height: 42px;
 	text-align: center;
 	color: #333333;
+}
+#yellow{
+	background-color:#F4D160;
+	font-size:36px;
 }
 /* omikuji */
 .omikuji-content{
