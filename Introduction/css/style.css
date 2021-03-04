@@ -751,7 +751,7 @@ p a {
   	margin: 100px 0 100px;
   	text-align: center;
 }
-.area1_wk h2 {
+.area1_wk h2 ,.area2_wk h2 {
   	display:initial;
   	text-align:center;
   	font-family: Capriola;
@@ -761,7 +761,7 @@ p a {
   	line-height: 36px;
   	color: #333333;
 }
-.area1_wk h3 {
+.area1_wk h3 ,.area1_wk h3 {
   	font-family: MS PGothic;
   	font-style: normal;
   	font-weight: normal;
@@ -769,7 +769,7 @@ p a {
   	line-height: 50px;
   	color: #333333;
 }
-.area1_wk li {
+.area1_wk li ,.area1_wk li {
   	display:flex;
   	align-items:center;
 	margin:0 100px;
