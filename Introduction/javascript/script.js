@@ -50,7 +50,7 @@ var mySwiper2 = new Swiper('.swiper-container2', {
 	freeModeMinimumVelocity: 5.5,
 	loopPreventsSlide: false,
 	// slideSpeed (ms)
-	speed: 5000,
+	speed: 9000,
     centeredSlides : true,
 	slidesPerView: 5.5,
     spaceBetween: 80,
