@@ -356,6 +356,9 @@ h4 {
 	background-color: #f0fff0;
 	border: outset;
 }
+p.free {
+    width: 200px;
+}
 p.name{
 	font-weight: bold;
 	font-size: 20px;
