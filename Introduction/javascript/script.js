@@ -31,11 +31,11 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 	
 	// pagesGuide
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-	}
+	//pagination: {
+	//	el: '.swiper-pagination',
+	//	type: 'bullets',
+	//	clickable: true
+	//}
 });
 
 var mySwiper2 = new Swiper('.swiper-container2', {
@@ -50,10 +50,10 @@ var mySwiper2 = new Swiper('.swiper-container2', {
 	freeModeMinimumVelocity: 5.5,
 	loopPreventsSlide: false,
 	// slideSpeed (ms)
-	speed: 9000,
-    centeredSlides : true,
+	speed: 5000,
+        centeredSlides : true,
 	slidesPerView: 5.5,
-    spaceBetween: 80,
+        spaceBetween: 80,
     
 	// autoSlide
 	autoplay: {
