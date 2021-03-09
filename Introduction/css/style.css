@@ -368,7 +368,6 @@ p.name{
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 footer p {
-  font-size: calc(40px + 15vh);
   line-height: calc(20px + 20vh);
   text-shadow: 0 0 5px #ffa500, 
                0 0 15px #ffa500, 
@@ -380,7 +379,6 @@ footer p {
   color: #fff6a9;
   font-family: "Sacramento", cursive;
   text-align: center;
-  animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
 }
 
@@ -389,8 +387,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  background: #222;
+  height: 160px;
+  background: DARKBLUE;
   background-image: repeating-linear-gradient(
     to bottom,
     transparent 7px,
