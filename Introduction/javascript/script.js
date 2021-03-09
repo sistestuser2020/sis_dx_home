@@ -28,6 +28,39 @@ var mySwiper = new Swiper('.swiper-container', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
+	}
+});
+
+var mySwiper2 = new Swiper('.swiper-container2', {
+	// slideLoop
+	loop: true,
+	loopFillGroupWithBlank: false,
+	preloadImages: false,
+	freeMode: true,
+	freeModeMomentumRatio: 2,
+	freeModeMomentumBounce: true,
+	freeModeMomentum: true,
+	freeModeMinimumVelocity: 5.5,
+	loopPreventsSlide: false,
+	// slideSpeed (ms)
+	speed: 5000,
+    centeredSlides : true,
+	slidesPerView: 5.5,
+    spaceBetween: 80,
+    
+	// autoSlide
+	autoplay: {
+		// slideSpeed (ms)
+		delay: 1,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+		reverseDirection: false
+	},
+	
+	// arrowGuide
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
 	},
 	
 	// pagesGuide
@@ -36,20 +69,6 @@ var mySwiper = new Swiper('.swiper-container', {
 		type: 'bullets',
 		clickable: true
 	}
-});
-
-var mySwiper2 = new Swiper('.swiper-container2', {
-	loop: true,
-	loopFillGroupWithBlank: false,
-	loopPreventsSlide: false,
-	preloadImages: false,
-    	centeredSlides : true,
-    	slidesPerColumn: 1,
-    	spaceBetween: 0,
-	pagination:'.swiper-pagination',
-	paginationClickable: true,
-	nextButton:'.swiper-button-next',
-	prevButton:'.swiper-button-prev'
 });
 
 
