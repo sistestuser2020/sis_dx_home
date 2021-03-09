@@ -367,6 +367,11 @@ p.name{
 /* :::::footer::::: */
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
+p.about_us_footer{
+	margin-left:33px;
+	font-size:4.75rem;
+}
+
 footer p {
   line-height: calc(20px + 20vh);
   text-shadow: 0 0 5px #ffa500, 
@@ -384,10 +389,6 @@ footer p {
 
 footer {
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 160px;
   background: DARKBLUE;
   background-image: repeating-linear-gradient(
     to bottom,
