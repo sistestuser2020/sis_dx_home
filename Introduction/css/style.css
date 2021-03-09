@@ -286,13 +286,6 @@ nav {
 	width: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-} #photo01 {
-	background-image: url(../images/step1.jpg);
-} #photo02 {
-	background-image: url(../images/step2.jpg);
-} #photo03 {
-	background-image: url(../images/step3.jpg);
-}
 .right {
 	float: right;
 	width: 50%;
