@@ -43,23 +43,13 @@ var mySwiper2 = new Swiper('.swiper-container2', {
 	loopFillGroupWithBlank: false,
 	loopPreventsSlide: false,
 	preloadImages: false,
-    centeredSlides : true,
-    slidesPerColumn: 1,
-//	slidesPerView: 1,
-    spaceBetween: 0,
-    
-	// arrowGuide
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
-	},
-	
-	// pagesGuide
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-	}
+    	centeredSlides : true,
+    	slidesPerColumn: 1,
+    	spaceBetween: 0,
+	pagination:'.swiper-pagination',
+	paginationClickable: true,
+	nextButton:'.swiper-button-next',
+	prevButton:'.swiper-button-prev'
 });
 
 
