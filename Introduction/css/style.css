@@ -881,6 +881,7 @@ p a {
 	background-color:#F4D160;
 	font-size:36px;
 }
+
 /* omikuji */
 .omikuji-content{
 	box-sizing: border-box;
@@ -907,16 +908,24 @@ p a {
 	height: 100vh;
 	left: 0;
 	top: 0;
+	z-index: 3;
 }
 .omikuji-modal-content{
 	background: #fff;
 	left: 50%;
 	padding: 5px;
 	position: absolute;
-	top: 25%;
+	top: 50%;
 	transform: translate(-50%,-50%);
 	width: 30%;
 	text-align: center;
 	color:red;
 	border-radius: 20px;
+	z-index: 4;
+}
+body.fixed {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
 }
