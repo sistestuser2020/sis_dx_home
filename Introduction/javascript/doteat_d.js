@@ -643,7 +643,7 @@ function miss()//　ミスした時の処理
    {
       over();
    }else{
-      document.getElementById("round").innerHTML=" MISS";
+      document.getElementById("round").innerHTML="　MISS";
       setTimeout("startInit()",2000);
    }
 }
