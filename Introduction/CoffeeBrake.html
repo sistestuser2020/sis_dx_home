@@ -49,13 +49,19 @@
 		<div class="tabContents">
 			<section id="section-1">
 				<div class="omikuji-content">
-					    <a class="js-modal-open" href="" data-target="modal01">クリックしてみて！</a>
+					    <a class="js-modal-open" href="" data-target="modal01">
+						    <p>クリックしてみて！</p>
+						    <img id="omikuji_box" src="images/omikuji_box.png"></a>	<!-- クリックするとイメージを動かすbyJquery -->
 				</div>
-				<div id="modal01" class="modal js-modal">
-					<div class="omikuji-modal-bg js-modal-close"></div>
-					<div class="omikuji-modal-content"></div>
+				<div id="modal01" class="modal js-modal">	<!-- モーダルで表示する部分  -->
+					<div class="omikuji-modal-bg js-modal-close"></div>	<!-- モーダル背景。背景をクリックしても閉じられるようにjs-modal-closeを併記  -->
+					<div class="omikuji-modal-content">
+						<p>あなたの今日の運勢は</p>
+						<div class="omikuji-result"></div>	<!-- 結果はJavascriptでセット -->
+						<a class="js-modal-close" href="">閉じる</a>
+					</div>
 				</div>
-			</section>
+			</section>			
  			<section id="section-2">
 				<div id="DotEat">
 					<iframe src="doteatgame_d.html" width="456" height="504" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
