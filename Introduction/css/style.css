@@ -869,7 +869,7 @@ p a {
   	align-items:center;
 	margin:0 100px;
 }
-.area_wiki ul li{
+.area_wiki ul, li{
 	font-family:MS PGothic;
 	font-size:18px;
 	line-height:1;
