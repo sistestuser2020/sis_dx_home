@@ -917,6 +917,23 @@ p a {
 	font-size:20px;
 
 }
+
+/* omikuji_box */
+#omikuji_box{
+	width: 10%;
+	height: 10%;
+}
+.cs-omikuji_box {
+	animation: cs-omikuji_box 1.0s linear;			/* おみくじ箱を1秒間定速で動かす */
+}
+@keyframes cs-omikuji_box {					/* おみくじ箱アニメーションの内容 */
+      0%   { transform: translate(0%, 0%); }			/* 動く前 ％は指定時間の按分割合　*/
+      25%  { transform: translate(0%, 0%) rotate(20deg); }	/* 最初から25％までは右20度回転　*/
+      50%  { transform: translate(0%, 0%) rotate(-40deg); }	/* 25％から50％までは左40度回転　*/
+      75%  { transform: translate(0%, 0%) rotate(20deg); }	/* 50％から75％までは右20度回転　*/
+      100% { transform: translate(0%, 0%) rotate(0deg); }	/* 最後は元の位置へ　*/
+}
+
 /* omikuji */
 .omikuji-content{
 	box-sizing: border-box;
