@@ -832,6 +832,7 @@ p a {
   	font-size: 36px;
   	line-height: 36px;
   	color: #333333;
+	text-align: center;
 }
 .area1_wk , .area2_wk {
   	margin: 100px 0 100px;
