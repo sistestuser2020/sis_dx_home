@@ -898,7 +898,24 @@ p a {
 	background-color:#F4D160;
 	font-size:36px;
 }
+.tbl-wk {
+	margin-left:auto;
+    margin-right:auto;
+    margin-top:36px;
+    margin-bottom:36px;
+    border-collapse: separate;
+    border-spacing: 8px 20px;
+}
+.tbl-wk td{
+	text-align:left;
+	font-size:18px;
+}
+.tbl-wk th{
+	background-color:#28527A;
+	color:white;
+	font-size:20px;
 
+}
 /* omikuji */
 .omikuji-content{
 	box-sizing: border-box;
