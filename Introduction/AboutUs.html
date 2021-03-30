@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
 <title>AboutUs</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&amp;display=swap" rel="stylesheet">
@@ -11,6 +12,8 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
 <script type="text/javascript" async="" src="javascript/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
 </head>
 <body>
 	<div id="page">
@@ -74,7 +77,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/1.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-1" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー１">
 										<span class="keyv-title__txt">メンバー１<br>紹介</span>
@@ -89,7 +92,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/2.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-2" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー２">
 										<span class="keyv-title__txt">メンバー２ <br>紹介</span>
@@ -104,7 +107,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/3.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-3" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー３">
 										<span class="keyv-title__txt">メンバー３ <br>紹介</span>
@@ -119,7 +122,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/4.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-4" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー４">
 										<span class="keyv-title__txt">メンバー４<br>紹介</span>
@@ -134,7 +137,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/5.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-5" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー５">
 										<span class="keyv-title__txt">メンバー５<br>紹介</span>
@@ -149,7 +152,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/6.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-6" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー６">
 										<span class="keyv-title__txt">メンバー６<br>紹介</span>
@@ -164,7 +167,7 @@
 						</div>
 						<div class="swiper-slide">
 							<div class="keyv-item js-keyv-item">
-								<span class="keyv-wrap-title"><a href="/people/7.html" class="keyv-title js-keyv-item-title">
+								<span class="keyv-wrap-title"><a href="#modal-7" class="keyv-title js-keyv-item-title textmodal">
 									<p class="keyv-title__before">
 										<img class="keyv-title__img" src="images/ber_ramen.png" alt="メンバー７">
 										<span class="keyv-title__txt">メンバー７<br>紹介</span>
@@ -183,6 +186,28 @@
 						<p class = "underScroll">
 						<a href="#section01"><span></span></a>
 					</p>
+					
+					<section id="modal-1" class="hide-area">
+						<p>モーダル１</p>
+					</section>
+					<section id="modal-2" class="hide-area">
+						<p>モーダル２</p>
+					</section>
+					<section id="modal-3" class="hide-area">
+						<p>モーダル３</p>
+					</section>
+					<section id="modal-4" class="hide-area">
+						<p>モーダル４</p>
+					</section>
+					<section id="modal-5" class="hide-area">
+						<p>モーダル５</p>
+					</section>
+					<section id="modal-6" class="hide-area">
+						<p>モーダル６</p>
+					</section>
+					<section id="modal-7" class="hide-area">
+						<p>モーダル７</p>
+					
 				</div>
 				<div class="contents">
 					<div class="member">
