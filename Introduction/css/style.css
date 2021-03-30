@@ -358,7 +358,28 @@ p.name{
 	font-size: 20px;
 	margin: 12px;
 }
-/* :::::footer::::: */
+
+/* :::::::::::::::modaal::::::::::::::: */
+/*共通：hide-area初期非表示*/
+.hide-area{
+	display: none;
+}
+
+/*共通：モーダルのボタンの色を変更*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+/* :::::::::::::::modaal::::::::::::::: */
+
+/* :::::::::::::::footer::::::::::::::: */
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 p.about_us_footer{
@@ -446,7 +467,8 @@ footer {
   color: #fff6a9;
   }
 }
-/* :::::footer::::: */
+/* :::::::::::::::footer::::::::::::::: */
+
 .support{
 	height: 1000px;
 }
