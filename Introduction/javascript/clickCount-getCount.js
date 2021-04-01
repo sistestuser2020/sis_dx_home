@@ -13,7 +13,6 @@ $(function(){
           var newCount = nowCount + 1;
           var timer = 20;                      //クッキーの有効期限（投票を制限する秒数） time()+60*60*24*30 はクッキーの有効期限を 30 日後にセット
           var phpurl = "vote.txt";     // 要修正 *******
-          console.log(phpurl);
           $.ajax({
                type : "POST",
                url : phpurl,
@@ -58,6 +57,5 @@ function getCountSet(id){
                }).fail(function(data){
                 var res = "error";
                 $(target).text(res);
-                console.log(data);
              });
 }
