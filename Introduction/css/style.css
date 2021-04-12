@@ -562,6 +562,7 @@ input[name="switch"] {
     	justify-content: center;
     	align-items: center;
     	font-size: x-large;
+	box-sizing: border-box;
 }
 .tabBtn li:not(:last-child) {
 	border-right: 1px solid white;
@@ -914,7 +915,6 @@ p a {
 	font-family:MS PGothic;
 	font-size:18px;
 	line-height:1;
-	padding:0.5em 0;
 	font-weight:bold;
 }
 .toolImg img {
